@@ -306,10 +306,7 @@ void Binario::PreordenR(NodoBinario *R){
 }
 
 string Binario::InordenR(pNodoBinario R, string resultado) { //se cambió el izq y der del cod original
-	if (R == NULL) {
-		return resultado;
-	}
-	else {
+	if (R != NULL) {
 		try {
 			return InordenR(R->Hder, resultado);
 		}
@@ -330,6 +327,7 @@ string Binario::InordenR(pNodoBinario R, string resultado) { //se cambió el izq 
 			cout << "Error en inordenR izq" << endl;
 		}
 	}
+	return resultado;
 }
 
 void Binario::InordenR(pNodoBinario R){ //se cambió el izq y der del cod original

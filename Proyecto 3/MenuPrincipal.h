@@ -547,14 +547,14 @@ private: System::Windows::Forms::Button^ btnIngresarClient;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Button^ button7;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::Label^ label7;
-	private: System::Windows::Forms::TextBox^ textBox4;
-	private: System::Windows::Forms::TextBox^ textBox5;
-	private: System::Windows::Forms::TextBox^ textBox6;
+
+
+
+
+
+
+
+
 private: System::Windows::Forms::Button^ btnConsProdListo;
 
 
@@ -709,14 +709,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 				this->tPConsultaDesc = (gcnew System::Windows::Forms::TabPage());
 				this->button5 = (gcnew System::Windows::Forms::Button());
-				this->button6 = (gcnew System::Windows::Forms::Button());
-				this->button7 = (gcnew System::Windows::Forms::Button());
-				this->label5 = (gcnew System::Windows::Forms::Label());
-				this->label6 = (gcnew System::Windows::Forms::Label());
-				this->label7 = (gcnew System::Windows::Forms::Label());
-				this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-				this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 				this->tPConsProd = (gcnew System::Windows::Forms::TabPage());
 				this->btnConsProdListo = (gcnew System::Windows::Forms::Button());
 				this->label10 = (gcnew System::Windows::Forms::Label());
@@ -1645,14 +1637,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// tPConsultaDesc
 				// 
 				this->tPConsultaDesc->Controls->Add(this->button5);
-				this->tPConsultaDesc->Controls->Add(this->button6);
-				this->tPConsultaDesc->Controls->Add(this->button7);
-				this->tPConsultaDesc->Controls->Add(this->label5);
-				this->tPConsultaDesc->Controls->Add(this->label6);
-				this->tPConsultaDesc->Controls->Add(this->label7);
-				this->tPConsultaDesc->Controls->Add(this->textBox4);
-				this->tPConsultaDesc->Controls->Add(this->textBox5);
-				this->tPConsultaDesc->Controls->Add(this->textBox6);
 				this->tPConsultaDesc->Location = System::Drawing::Point(4, 22);
 				this->tPConsultaDesc->Name = L"tPConsultaDesc";
 				this->tPConsultaDesc->Padding = System::Windows::Forms::Padding(3);
@@ -1664,80 +1648,13 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// button5
 				// 
 				this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button5->Location = System::Drawing::Point(729, 68);
+				this->button5->Location = System::Drawing::Point(400, 192);
 				this->button5->Name = L"button5";
-				this->button5->Size = System::Drawing::Size(54, 23);
+				this->button5->Size = System::Drawing::Size(167, 23);
 				this->button5->TabIndex = 31;
-				this->button5->Text = L"Ok";
+				this->button5->Text = L"Consultar Descuento";
 				this->button5->UseVisualStyleBackColor = true;
-				// 
-				// button6
-				// 
-				this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button6->Location = System::Drawing::Point(468, 68);
-				this->button6->Name = L"button6";
-				this->button6->Size = System::Drawing::Size(54, 23);
-				this->button6->TabIndex = 30;
-				this->button6->Text = L"Ok";
-				this->button6->UseVisualStyleBackColor = true;
-				// 
-				// button7
-				// 
-				this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button7->Location = System::Drawing::Point(182, 68);
-				this->button7->Name = L"button7";
-				this->button7->Size = System::Drawing::Size(54, 23);
-				this->button7->TabIndex = 29;
-				this->button7->Text = L"Ok";
-				this->button7->UseVisualStyleBackColor = true;
-				// 
-				// label5
-				// 
-				this->label5->AutoSize = true;
-				this->label5->Location = System::Drawing::Point(600, 41);
-				this->label5->Name = L"label5";
-				this->label5->Size = System::Drawing::Size(153, 13);
-				this->label5->TabIndex = 28;
-				this->label5->Text = L"Introduzca el número de marca";
-				// 
-				// label6
-				// 
-				this->label6->AutoSize = true;
-				this->label6->Location = System::Drawing::Point(337, 41);
-				this->label6->Name = L"label6";
-				this->label6->Size = System::Drawing::Size(166, 13);
-				this->label6->TabIndex = 27;
-				this->label6->Text = L"Introduzca el número de producto";
-				// 
-				// label7
-				// 
-				this->label7->AutoSize = true;
-				this->label7->Location = System::Drawing::Point(76, 41);
-				this->label7->Name = L"label7";
-				this->label7->Size = System::Drawing::Size(153, 13);
-				this->label7->TabIndex = 26;
-				this->label7->Text = L"Introduzca el número de pasillo";
-				// 
-				// textBox4
-				// 
-				this->textBox4->Location = System::Drawing::Point(603, 68);
-				this->textBox4->Name = L"textBox4";
-				this->textBox4->Size = System::Drawing::Size(114, 20);
-				this->textBox4->TabIndex = 25;
-				// 
-				// textBox5
-				// 
-				this->textBox5->Location = System::Drawing::Point(340, 68);
-				this->textBox5->Name = L"textBox5";
-				this->textBox5->Size = System::Drawing::Size(122, 20);
-				this->textBox5->TabIndex = 24;
-				// 
-				// textBox6
-				// 
-				this->textBox6->Location = System::Drawing::Point(74, 68);
-				this->textBox6->Name = L"textBox6";
-				this->textBox6->Size = System::Drawing::Size(102, 20);
-				this->textBox6->TabIndex = 23;
+				this->button5->Click += gcnew System::EventHandler(this, &MenuPrincipal::button5_Click);
 				// 
 				// tPConsProd
 				// 
@@ -2055,7 +1972,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsultarPrecio->ResumeLayout(false);
 				this->tPConsultarPrecio->PerformLayout();
 				this->tPConsultaDesc->ResumeLayout(false);
-				this->tPConsultaDesc->PerformLayout();
 				this->tPConsProd->ResumeLayout(false);
 				this->tPConsProd->PerformLayout();
 				this->tPComprar->ResumeLayout(false);
@@ -2373,6 +2289,16 @@ private: System::Void btnConsProdListo_Click(System::Object^ sender, System::Eve
 		MessageBox::Show(msclr::interop::marshal_as<String^>("El pasillo digitado no se encuentra en nuestra base de datos, por favor intentelo de nuevo. Agradecemos su paciencia"));
 	}
 	pCodPasillo = 0;
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	bool descontar = false;
+	descontar = LCompras.verificarDescuento(pCedula); //###
+	if (descontar) {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento es de: " + to_string(descuento)+"%" ));
+	}
+	else {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento es de: 0%"));
+	}
 }
 };
 }
