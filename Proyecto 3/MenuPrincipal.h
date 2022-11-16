@@ -473,6 +473,14 @@ private: System::Windows::Forms::TextBox^ tBMarcaConsPrV;
 private: System::Windows::Forms::TextBox^ tBProdConsPrV;
 
 private: System::Windows::Forms::TextBox^ tBPasConsPrV;
+private: System::Windows::Forms::TextBox^ tBConsDescV;
+
+
+private: System::Windows::Forms::Label^ label8;
+private: System::Windows::Forms::Button^ button3;
+private: System::Windows::Forms::Button^ button4;
+private: System::Windows::Forms::Label^ label9;
+private: System::Windows::Forms::TextBox^ tBPasConsProdV;
 
 
 
@@ -656,6 +664,9 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tBProdConsPrV = (gcnew System::Windows::Forms::TextBox());
 				this->tBPasConsPrV = (gcnew System::Windows::Forms::TextBox());
 				this->tPConsDescVen = (gcnew System::Windows::Forms::TabPage());
+				this->tBConsDescV = (gcnew System::Windows::Forms::TextBox());
+				this->label8 = (gcnew System::Windows::Forms::Label());
+				this->button3 = (gcnew System::Windows::Forms::Button());
 				this->tPConsProdXPasVen = (gcnew System::Windows::Forms::TabPage());
 				this->tPConsProdVen = (gcnew System::Windows::Forms::TabPage());
 				this->tabPageAdmin = (gcnew System::Windows::Forms::TabPage());
@@ -758,10 +769,15 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->textBoxClientes = (gcnew System::Windows::Forms::TextBox());
 				this->label1 = (gcnew System::Windows::Forms::Label());
 				this->BtnInicial = (gcnew System::Windows::Forms::Button());
+				this->button4 = (gcnew System::Windows::Forms::Button());
+				this->label9 = (gcnew System::Windows::Forms::Label());
+				this->tBPasConsProdV = (gcnew System::Windows::Forms::TextBox());
 				this->tCMenuPrinc->SuspendLayout();
 				this->tPVendedor->SuspendLayout();
 				this->tCVendedor->SuspendLayout();
 				this->tPConsPrecioVen->SuspendLayout();
+				this->tPConsDescVen->SuspendLayout();
+				this->tPConsProdXPasVen->SuspendLayout();
 				this->tabPageAdmin->SuspendLayout();
 				this->tabControl2->SuspendLayout();
 				this->tPBasesDatos->SuspendLayout();
@@ -953,6 +969,9 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// 
 				// tPConsDescVen
 				// 
+				this->tPConsDescVen->Controls->Add(this->tBConsDescV);
+				this->tPConsDescVen->Controls->Add(this->label8);
+				this->tPConsDescVen->Controls->Add(this->button3);
 				this->tPConsDescVen->Location = System::Drawing::Point(4, 22);
 				this->tPConsDescVen->Name = L"tPConsDescVen";
 				this->tPConsDescVen->Padding = System::Windows::Forms::Padding(3);
@@ -962,8 +981,41 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsDescVen->UseVisualStyleBackColor = true;
 				this->tPConsDescVen->UseWaitCursor = true;
 				// 
+				// tBConsDescV
+				// 
+				this->tBConsDescV->Location = System::Drawing::Point(467, 218);
+				this->tBConsDescV->Name = L"tBConsDescV";
+				this->tBConsDescV->Size = System::Drawing::Size(102, 20);
+				this->tBConsDescV->TabIndex = 34;
+				this->tBConsDescV->UseWaitCursor = true;
+				// 
+				// label8
+				// 
+				this->label8->AutoSize = true;
+				this->label8->Location = System::Drawing::Point(372, 181);
+				this->label8->Name = L"label8";
+				this->label8->Size = System::Drawing::Size(291, 13);
+				this->label8->TabIndex = 33;
+				this->label8->Text = L"Escriba el número de cédula del cliente que desea consultar";
+				this->label8->UseWaitCursor = true;
+				// 
+				// button3
+				// 
+				this->button3->Cursor = System::Windows::Forms::Cursors::WaitCursor;
+				this->button3->Location = System::Drawing::Point(439, 258);
+				this->button3->Name = L"button3";
+				this->button3->Size = System::Drawing::Size(167, 23);
+				this->button3->TabIndex = 32;
+				this->button3->Text = L"Consultar Descuento";
+				this->button3->UseVisualStyleBackColor = true;
+				this->button3->UseWaitCursor = true;
+				this->button3->Click += gcnew System::EventHandler(this, &MenuPrincipal::button3_Click);
+				// 
 				// tPConsProdXPasVen
 				// 
+				this->tPConsProdXPasVen->Controls->Add(this->button4);
+				this->tPConsProdXPasVen->Controls->Add(this->label9);
+				this->tPConsProdXPasVen->Controls->Add(this->tBPasConsProdV);
 				this->tPConsProdXPasVen->Location = System::Drawing::Point(4, 22);
 				this->tPConsProdXPasVen->Name = L"tPConsProdXPasVen";
 				this->tPConsProdXPasVen->Size = System::Drawing::Size(1048, 514);
@@ -2006,6 +2058,33 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->BtnInicial->UseWaitCursor = true;
 				this->BtnInicial->Click += gcnew System::EventHandler(this, &MenuPrincipal::BtnInicial_Click);
 				// 
+				// button4
+				// 
+				this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
+				this->button4->Location = System::Drawing::Point(446, 261);
+				this->button4->Name = L"button4";
+				this->button4->Size = System::Drawing::Size(54, 23);
+				this->button4->TabIndex = 32;
+				this->button4->Text = L"Listo";
+				this->button4->UseVisualStyleBackColor = true;
+				this->button4->Click += gcnew System::EventHandler(this, &MenuPrincipal::button4_Click);
+				// 
+				// label9
+				// 
+				this->label9->AutoSize = true;
+				this->label9->Location = System::Drawing::Point(443, 186);
+				this->label9->Name = L"label9";
+				this->label9->Size = System::Drawing::Size(153, 13);
+				this->label9->TabIndex = 31;
+				this->label9->Text = L"Introduzca el número de pasillo";
+				// 
+				// tBPasConsProdV
+				// 
+				this->tBPasConsProdV->Location = System::Drawing::Point(446, 213);
+				this->tBPasConsProdV->Name = L"tBPasConsProdV";
+				this->tBPasConsProdV->Size = System::Drawing::Size(102, 20);
+				this->tBPasConsProdV->TabIndex = 30;
+				// 
 				// MenuPrincipal
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -2026,6 +2105,10 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tCVendedor->ResumeLayout(false);
 				this->tPConsPrecioVen->ResumeLayout(false);
 				this->tPConsPrecioVen->PerformLayout();
+				this->tPConsDescVen->ResumeLayout(false);
+				this->tPConsDescVen->PerformLayout();
+				this->tPConsProdXPasVen->ResumeLayout(false);
+				this->tPConsProdXPasVen->PerformLayout();
 				this->tabPageAdmin->ResumeLayout(false);
 				this->tabPageAdmin->PerformLayout();
 				this->tabControl2->ResumeLayout(false);
@@ -2486,6 +2569,31 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	pCodPasillo = 0;
 	pCodProducto = 0;
 	pCodMarca = 0;
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	bool descontar = false;
+	int brayton = 0;
+	brayton = stoi(this->toStandardString(this->tBConsDescV->Text));
+	descontar = LCompras.verificarDescuento(brayton); //###
+	if (descontar) {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento es de: " + to_string(descuento) + "%"));
+	}
+	else {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento es de: 0%"));
+	}
+
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	pCodPasillo = stoi(this->toStandardString(this->tBPasConsProdV->Text));
+	bool encontrado;
+	encontrado = A1.BuscarPasillo(A1.raiz, pCodPasillo);
+	if (encontrado) {
+		MessageBox::Show(msclr::interop::marshal_as<String^>(A1.BuscarProducto1(A1.raiz, pCodPasillo)));
+	}
+	else {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El pasillo digitado no se encuentra en nuestra base de datos, por favor intentelo de nuevo. Agradecemos su paciencia"));
+	}
+	pCodPasillo = 0;
 }
 };
 }
