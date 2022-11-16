@@ -406,12 +406,13 @@ namespace Proyecto3Pruebita {
 		int descuento = 5;   //###
 	private: System::Windows::Forms::Button^ btnFacturar;
 	private: System::Windows::Forms::TabControl^ tabControl1;
-	private: System::Windows::Forms::TabPage^ tPInsProd;
+private: System::Windows::Forms::TabPage^ tPIns;
+
 	private: System::Windows::Forms::TabPage^ tPModProd;
 	private: System::Windows::Forms::TabPage^ tPConsPrecio;
 	private: System::Windows::Forms::TabPage^ tPConsDesc;
 	private: System::Windows::Forms::TabPage^ tPModDesc;
-	private: System::Windows::Forms::TabPage^ tPRegCliente;
+
 	private: System::Windows::Forms::TabControl^ tabControl3;
 	private: System::Windows::Forms::TabPage^ tPPasMasVis;
 	private: System::Windows::Forms::Label^ label20;
@@ -481,6 +482,46 @@ private: System::Windows::Forms::Button^ button3;
 private: System::Windows::Forms::Button^ button4;
 private: System::Windows::Forms::Label^ label9;
 private: System::Windows::Forms::TextBox^ tBPasConsProdV;
+private: System::Windows::Forms::TabControl^ tabControl4;
+private: System::Windows::Forms::TabPage^ tabPage2;
+private: System::Windows::Forms::TabPage^ tabPage3;
+private: System::Windows::Forms::TabPage^ tabPage4;
+private: System::Windows::Forms::TabPage^ tabPage5;
+private: System::Windows::Forms::TabPage^ tabPage6;
+private: System::Windows::Forms::TabPage^ tabPage1;
+private: System::Windows::Forms::TabPage^ tPEliminar;
+private: System::Windows::Forms::TabControl^ tabControl5;
+private: System::Windows::Forms::TabPage^ tabPage7;
+private: System::Windows::Forms::TabPage^ tabPage8;
+private: System::Windows::Forms::TabPage^ tabPage9;
+private: System::Windows::Forms::TabPage^ tabPage10;
+private: System::Windows::Forms::TabPage^ tabPage11;
+private: System::Windows::Forms::TabPage^ tabPage12;
+private: System::Windows::Forms::TabControl^ tabControl6;
+private: System::Windows::Forms::TabPage^ tabPage13;
+private: System::Windows::Forms::TabPage^ tabPage14;
+private: System::Windows::Forms::TabPage^ tabPage15;
+private: System::Windows::Forms::TabPage^ tabPage16;
+private: System::Windows::Forms::TabPage^ tabPage17;
+private: System::Windows::Forms::TabPage^ tabPage18;
+private: System::Windows::Forms::Label^ label26;
+private: System::Windows::Forms::TextBox^ tBModDescAdmi;
+private: System::Windows::Forms::Button^ btnModDescAdmi;
+private: System::Windows::Forms::Button^ button5;
+private: System::Windows::Forms::Button^ button6;
+private: System::Windows::Forms::Label^ label27;
+private: System::Windows::Forms::Label^ label28;
+private: System::Windows::Forms::Label^ label29;
+private: System::Windows::Forms::TextBox^ tBMarcaConsPrA;
+private: System::Windows::Forms::TextBox^ tBProdConsPrA;
+private: System::Windows::Forms::TextBox^ tBPasConsPrA;
+private: System::Windows::Forms::TabPage^ tabPage19;
+private: System::Windows::Forms::Button^ button7;
+private: System::Windows::Forms::TextBox^ textBox1;
+private: System::Windows::Forms::Label^ label30;
+
+
+
 
 
 
@@ -668,17 +709,52 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->label8 = (gcnew System::Windows::Forms::Label());
 				this->button3 = (gcnew System::Windows::Forms::Button());
 				this->tPConsProdXPasVen = (gcnew System::Windows::Forms::TabPage());
+				this->button4 = (gcnew System::Windows::Forms::Button());
+				this->label9 = (gcnew System::Windows::Forms::Label());
+				this->tBPasConsProdV = (gcnew System::Windows::Forms::TextBox());
 				this->tPConsProdVen = (gcnew System::Windows::Forms::TabPage());
 				this->tabPageAdmin = (gcnew System::Windows::Forms::TabPage());
 				this->tabControl2 = (gcnew System::Windows::Forms::TabControl());
 				this->tPBasesDatos = (gcnew System::Windows::Forms::TabPage());
 				this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
-				this->tPInsProd = (gcnew System::Windows::Forms::TabPage());
+				this->tPIns = (gcnew System::Windows::Forms::TabPage());
+				this->tabControl4 = (gcnew System::Windows::Forms::TabControl());
+				this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+				this->tPEliminar = (gcnew System::Windows::Forms::TabPage());
+				this->tabControl5 = (gcnew System::Windows::Forms::TabControl());
+				this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage8 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage10 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage11 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
 				this->tPModProd = (gcnew System::Windows::Forms::TabPage());
+				this->tabControl6 = (gcnew System::Windows::Forms::TabControl());
+				this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage16 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage17 = (gcnew System::Windows::Forms::TabPage());
+				this->tabPage18 = (gcnew System::Windows::Forms::TabPage());
 				this->tPConsPrecio = (gcnew System::Windows::Forms::TabPage());
+				this->button6 = (gcnew System::Windows::Forms::Button());
+				this->label27 = (gcnew System::Windows::Forms::Label());
+				this->label28 = (gcnew System::Windows::Forms::Label());
+				this->label29 = (gcnew System::Windows::Forms::Label());
+				this->tBMarcaConsPrA = (gcnew System::Windows::Forms::TextBox());
+				this->tBProdConsPrA = (gcnew System::Windows::Forms::TextBox());
+				this->tBPasConsPrA = (gcnew System::Windows::Forms::TextBox());
 				this->tPConsDesc = (gcnew System::Windows::Forms::TabPage());
+				this->button5 = (gcnew System::Windows::Forms::Button());
 				this->tPModDesc = (gcnew System::Windows::Forms::TabPage());
-				this->tPRegCliente = (gcnew System::Windows::Forms::TabPage());
+				this->btnModDescAdmi = (gcnew System::Windows::Forms::Button());
+				this->label26 = (gcnew System::Windows::Forms::Label());
+				this->tBModDescAdmi = (gcnew System::Windows::Forms::TextBox());
 				this->tPFacturar = (gcnew System::Windows::Forms::TabPage());
 				this->btnFacturar = (gcnew System::Windows::Forms::Button());
 				this->tPRevGondolas = (gcnew System::Windows::Forms::TabPage());
@@ -769,9 +845,10 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->textBoxClientes = (gcnew System::Windows::Forms::TextBox());
 				this->label1 = (gcnew System::Windows::Forms::Label());
 				this->BtnInicial = (gcnew System::Windows::Forms::Button());
-				this->button4 = (gcnew System::Windows::Forms::Button());
-				this->label9 = (gcnew System::Windows::Forms::Label());
-				this->tBPasConsProdV = (gcnew System::Windows::Forms::TextBox());
+				this->tabPage19 = (gcnew System::Windows::Forms::TabPage());
+				this->label30 = (gcnew System::Windows::Forms::Label());
+				this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+				this->button7 = (gcnew System::Windows::Forms::Button());
 				this->tCMenuPrinc->SuspendLayout();
 				this->tPVendedor->SuspendLayout();
 				this->tCVendedor->SuspendLayout();
@@ -782,6 +859,15 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabControl2->SuspendLayout();
 				this->tPBasesDatos->SuspendLayout();
 				this->tabControl1->SuspendLayout();
+				this->tPIns->SuspendLayout();
+				this->tabControl4->SuspendLayout();
+				this->tPEliminar->SuspendLayout();
+				this->tabControl5->SuspendLayout();
+				this->tPModProd->SuspendLayout();
+				this->tabControl6->SuspendLayout();
+				this->tPConsPrecio->SuspendLayout();
+				this->tPConsDesc->SuspendLayout();
+				this->tPModDesc->SuspendLayout();
 				this->tPFacturar->SuspendLayout();
 				this->tPRevGondolas->SuspendLayout();
 				this->tPVerInventario->SuspendLayout();
@@ -797,6 +883,7 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsultaDesc->SuspendLayout();
 				this->tPConsProd->SuspendLayout();
 				this->tPComprar->SuspendLayout();
+				this->tabPage19->SuspendLayout();
 				this->SuspendLayout();
 				// 
 				// titulo
@@ -882,6 +969,7 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tCVendedor->Size = System::Drawing::Size(1056, 540);
 				this->tCVendedor->TabIndex = 0;
 				this->tCVendedor->UseWaitCursor = true;
+				this->tCVendedor->Visible = false;
 				// 
 				// tPConsPrecioVen
 				// 
@@ -1024,6 +1112,36 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsProdXPasVen->UseVisualStyleBackColor = true;
 				this->tPConsProdXPasVen->UseWaitCursor = true;
 				// 
+				// button4
+				// 
+				this->button4->Cursor = System::Windows::Forms::Cursors::WaitCursor;
+				this->button4->Location = System::Drawing::Point(446, 261);
+				this->button4->Name = L"button4";
+				this->button4->Size = System::Drawing::Size(54, 23);
+				this->button4->TabIndex = 32;
+				this->button4->Text = L"Listo";
+				this->button4->UseVisualStyleBackColor = true;
+				this->button4->UseWaitCursor = true;
+				this->button4->Click += gcnew System::EventHandler(this, &MenuPrincipal::button4_Click);
+				// 
+				// label9
+				// 
+				this->label9->AutoSize = true;
+				this->label9->Location = System::Drawing::Point(443, 186);
+				this->label9->Name = L"label9";
+				this->label9->Size = System::Drawing::Size(153, 13);
+				this->label9->TabIndex = 31;
+				this->label9->Text = L"Introduzca el número de pasillo";
+				this->label9->UseWaitCursor = true;
+				// 
+				// tBPasConsProdV
+				// 
+				this->tBPasConsProdV->Location = System::Drawing::Point(446, 213);
+				this->tBPasConsProdV->Name = L"tBPasConsProdV";
+				this->tBPasConsProdV->Size = System::Drawing::Size(102, 20);
+				this->tBPasConsProdV->TabIndex = 30;
+				this->tBPasConsProdV->UseWaitCursor = true;
+				// 
 				// tPConsProdVen
 				// 
 				this->tPConsProdVen->Location = System::Drawing::Point(4, 22);
@@ -1076,40 +1194,270 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// 
 				// tabControl1
 				// 
-				this->tabControl1->Controls->Add(this->tPInsProd);
+				this->tabControl1->Controls->Add(this->tPIns);
+				this->tabControl1->Controls->Add(this->tPEliminar);
 				this->tabControl1->Controls->Add(this->tPModProd);
 				this->tabControl1->Controls->Add(this->tPConsPrecio);
 				this->tabControl1->Controls->Add(this->tPConsDesc);
 				this->tabControl1->Controls->Add(this->tPModDesc);
-				this->tabControl1->Controls->Add(this->tPRegCliente);
 				this->tabControl1->Location = System::Drawing::Point(6, 3);
 				this->tabControl1->Name = L"tabControl1";
 				this->tabControl1->SelectedIndex = 0;
 				this->tabControl1->Size = System::Drawing::Size(1047, 530);
 				this->tabControl1->TabIndex = 0;
 				// 
-				// tPInsProd
+				// tPIns
 				// 
-				this->tPInsProd->Location = System::Drawing::Point(4, 22);
-				this->tPInsProd->Name = L"tPInsProd";
-				this->tPInsProd->Padding = System::Windows::Forms::Padding(3);
-				this->tPInsProd->Size = System::Drawing::Size(1039, 504);
-				this->tPInsProd->TabIndex = 0;
-				this->tPInsProd->Text = L"Insertar producto";
-				this->tPInsProd->UseVisualStyleBackColor = true;
+				this->tPIns->Controls->Add(this->tabControl4);
+				this->tPIns->Location = System::Drawing::Point(4, 22);
+				this->tPIns->Name = L"tPIns";
+				this->tPIns->Padding = System::Windows::Forms::Padding(3);
+				this->tPIns->Size = System::Drawing::Size(1039, 504);
+				this->tPIns->TabIndex = 0;
+				this->tPIns->Text = L"Insertar ";
+				this->tPIns->UseVisualStyleBackColor = true;
+				// 
+				// tabControl4
+				// 
+				this->tabControl4->Controls->Add(this->tabPage19);
+				this->tabControl4->Controls->Add(this->tabPage2);
+				this->tabControl4->Controls->Add(this->tabPage3);
+				this->tabControl4->Controls->Add(this->tabPage4);
+				this->tabControl4->Controls->Add(this->tabPage5);
+				this->tabControl4->Controls->Add(this->tabPage6);
+				this->tabControl4->Controls->Add(this->tabPage1);
+				this->tabControl4->Location = System::Drawing::Point(9, 6);
+				this->tabControl4->Name = L"tabControl4";
+				this->tabControl4->SelectedIndex = 0;
+				this->tabControl4->Size = System::Drawing::Size(1024, 492);
+				this->tabControl4->TabIndex = 0;
+				// 
+				// tabPage2
+				// 
+				this->tabPage2->Location = System::Drawing::Point(4, 22);
+				this->tabPage2->Name = L"tabPage2";
+				this->tabPage2->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage2->Size = System::Drawing::Size(1016, 466);
+				this->tabPage2->TabIndex = 1;
+				this->tabPage2->Text = L"Producto";
+				this->tabPage2->UseVisualStyleBackColor = true;
+				// 
+				// tabPage3
+				// 
+				this->tabPage3->Location = System::Drawing::Point(4, 22);
+				this->tabPage3->Name = L"tabPage3";
+				this->tabPage3->Size = System::Drawing::Size(1016, 466);
+				this->tabPage3->TabIndex = 2;
+				this->tabPage3->Text = L"Marca";
+				this->tabPage3->UseVisualStyleBackColor = true;
+				// 
+				// tabPage4
+				// 
+				this->tabPage4->Location = System::Drawing::Point(4, 22);
+				this->tabPage4->Name = L"tabPage4";
+				this->tabPage4->Size = System::Drawing::Size(1016, 466);
+				this->tabPage4->TabIndex = 3;
+				this->tabPage4->Text = L"Inventario";
+				this->tabPage4->UseVisualStyleBackColor = true;
+				// 
+				// tabPage5
+				// 
+				this->tabPage5->Location = System::Drawing::Point(4, 22);
+				this->tabPage5->Name = L"tabPage5";
+				this->tabPage5->Size = System::Drawing::Size(1016, 466);
+				this->tabPage5->TabIndex = 4;
+				this->tabPage5->Text = L"Registrar Administrador";
+				this->tabPage5->UseVisualStyleBackColor = true;
+				// 
+				// tabPage6
+				// 
+				this->tabPage6->Location = System::Drawing::Point(4, 22);
+				this->tabPage6->Name = L"tabPage6";
+				this->tabPage6->Size = System::Drawing::Size(1016, 466);
+				this->tabPage6->TabIndex = 5;
+				this->tabPage6->Text = L"Registrar Vendedor";
+				this->tabPage6->UseVisualStyleBackColor = true;
+				// 
+				// tabPage1
+				// 
+				this->tabPage1->Location = System::Drawing::Point(4, 22);
+				this->tabPage1->Name = L"tabPage1";
+				this->tabPage1->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage1->Size = System::Drawing::Size(1016, 466);
+				this->tabPage1->TabIndex = 0;
+				this->tabPage1->Text = L"Registrar Cliente";
+				this->tabPage1->UseVisualStyleBackColor = true;
+				// 
+				// tPEliminar
+				// 
+				this->tPEliminar->Controls->Add(this->tabControl5);
+				this->tPEliminar->Location = System::Drawing::Point(4, 22);
+				this->tPEliminar->Name = L"tPEliminar";
+				this->tPEliminar->Size = System::Drawing::Size(1039, 504);
+				this->tPEliminar->TabIndex = 5;
+				this->tPEliminar->Text = L"Eliminar";
+				this->tPEliminar->UseVisualStyleBackColor = true;
+				// 
+				// tabControl5
+				// 
+				this->tabControl5->Controls->Add(this->tabPage7);
+				this->tabControl5->Controls->Add(this->tabPage8);
+				this->tabControl5->Controls->Add(this->tabPage9);
+				this->tabControl5->Controls->Add(this->tabPage10);
+				this->tabControl5->Controls->Add(this->tabPage11);
+				this->tabControl5->Controls->Add(this->tabPage12);
+				this->tabControl5->Location = System::Drawing::Point(7, 6);
+				this->tabControl5->Name = L"tabControl5";
+				this->tabControl5->SelectedIndex = 0;
+				this->tabControl5->Size = System::Drawing::Size(1024, 492);
+				this->tabControl5->TabIndex = 1;
+				// 
+				// tabPage7
+				// 
+				this->tabPage7->Location = System::Drawing::Point(4, 22);
+				this->tabPage7->Name = L"tabPage7";
+				this->tabPage7->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage7->Size = System::Drawing::Size(1016, 466);
+				this->tabPage7->TabIndex = 1;
+				this->tabPage7->Text = L"Producto";
+				this->tabPage7->UseVisualStyleBackColor = true;
+				// 
+				// tabPage8
+				// 
+				this->tabPage8->Location = System::Drawing::Point(4, 22);
+				this->tabPage8->Name = L"tabPage8";
+				this->tabPage8->Size = System::Drawing::Size(1016, 466);
+				this->tabPage8->TabIndex = 2;
+				this->tabPage8->Text = L"Marca";
+				this->tabPage8->UseVisualStyleBackColor = true;
+				// 
+				// tabPage9
+				// 
+				this->tabPage9->Location = System::Drawing::Point(4, 22);
+				this->tabPage9->Name = L"tabPage9";
+				this->tabPage9->Size = System::Drawing::Size(1016, 466);
+				this->tabPage9->TabIndex = 3;
+				this->tabPage9->Text = L"Inventario";
+				this->tabPage9->UseVisualStyleBackColor = true;
+				// 
+				// tabPage10
+				// 
+				this->tabPage10->Location = System::Drawing::Point(4, 22);
+				this->tabPage10->Name = L"tabPage10";
+				this->tabPage10->Size = System::Drawing::Size(1016, 466);
+				this->tabPage10->TabIndex = 4;
+				this->tabPage10->Text = L"Eliminar Administrador";
+				this->tabPage10->UseVisualStyleBackColor = true;
+				// 
+				// tabPage11
+				// 
+				this->tabPage11->Location = System::Drawing::Point(4, 22);
+				this->tabPage11->Name = L"tabPage11";
+				this->tabPage11->Size = System::Drawing::Size(1016, 466);
+				this->tabPage11->TabIndex = 5;
+				this->tabPage11->Text = L"Eliminar Vendedor";
+				this->tabPage11->UseVisualStyleBackColor = true;
+				// 
+				// tabPage12
+				// 
+				this->tabPage12->Location = System::Drawing::Point(4, 22);
+				this->tabPage12->Name = L"tabPage12";
+				this->tabPage12->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage12->Size = System::Drawing::Size(1016, 466);
+				this->tabPage12->TabIndex = 0;
+				this->tabPage12->Text = L"Eliminar Cliente";
+				this->tabPage12->UseVisualStyleBackColor = true;
 				// 
 				// tPModProd
 				// 
+				this->tPModProd->Controls->Add(this->tabControl6);
 				this->tPModProd->Location = System::Drawing::Point(4, 22);
 				this->tPModProd->Name = L"tPModProd";
 				this->tPModProd->Padding = System::Windows::Forms::Padding(3);
 				this->tPModProd->Size = System::Drawing::Size(1039, 504);
 				this->tPModProd->TabIndex = 1;
-				this->tPModProd->Text = L"Modificar Producto";
+				this->tPModProd->Text = L"Modificar";
 				this->tPModProd->UseVisualStyleBackColor = true;
+				// 
+				// tabControl6
+				// 
+				this->tabControl6->Controls->Add(this->tabPage13);
+				this->tabControl6->Controls->Add(this->tabPage14);
+				this->tabControl6->Controls->Add(this->tabPage15);
+				this->tabControl6->Controls->Add(this->tabPage16);
+				this->tabControl6->Controls->Add(this->tabPage17);
+				this->tabControl6->Controls->Add(this->tabPage18);
+				this->tabControl6->Location = System::Drawing::Point(7, 6);
+				this->tabControl6->Name = L"tabControl6";
+				this->tabControl6->SelectedIndex = 0;
+				this->tabControl6->Size = System::Drawing::Size(1024, 492);
+				this->tabControl6->TabIndex = 2;
+				// 
+				// tabPage13
+				// 
+				this->tabPage13->Location = System::Drawing::Point(4, 22);
+				this->tabPage13->Name = L"tabPage13";
+				this->tabPage13->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage13->Size = System::Drawing::Size(1016, 466);
+				this->tabPage13->TabIndex = 1;
+				this->tabPage13->Text = L"Producto";
+				this->tabPage13->UseVisualStyleBackColor = true;
+				// 
+				// tabPage14
+				// 
+				this->tabPage14->Location = System::Drawing::Point(4, 22);
+				this->tabPage14->Name = L"tabPage14";
+				this->tabPage14->Size = System::Drawing::Size(1016, 466);
+				this->tabPage14->TabIndex = 2;
+				this->tabPage14->Text = L"Marca";
+				this->tabPage14->UseVisualStyleBackColor = true;
+				// 
+				// tabPage15
+				// 
+				this->tabPage15->Location = System::Drawing::Point(4, 22);
+				this->tabPage15->Name = L"tabPage15";
+				this->tabPage15->Size = System::Drawing::Size(1016, 466);
+				this->tabPage15->TabIndex = 3;
+				this->tabPage15->Text = L"Inventario";
+				this->tabPage15->UseVisualStyleBackColor = true;
+				// 
+				// tabPage16
+				// 
+				this->tabPage16->Location = System::Drawing::Point(4, 22);
+				this->tabPage16->Name = L"tabPage16";
+				this->tabPage16->Size = System::Drawing::Size(1016, 466);
+				this->tabPage16->TabIndex = 4;
+				this->tabPage16->Text = L"Administrador";
+				this->tabPage16->UseVisualStyleBackColor = true;
+				// 
+				// tabPage17
+				// 
+				this->tabPage17->Location = System::Drawing::Point(4, 22);
+				this->tabPage17->Name = L"tabPage17";
+				this->tabPage17->Size = System::Drawing::Size(1016, 466);
+				this->tabPage17->TabIndex = 5;
+				this->tabPage17->Text = L"Vendedor";
+				this->tabPage17->UseVisualStyleBackColor = true;
+				// 
+				// tabPage18
+				// 
+				this->tabPage18->Location = System::Drawing::Point(4, 22);
+				this->tabPage18->Name = L"tabPage18";
+				this->tabPage18->Padding = System::Windows::Forms::Padding(3);
+				this->tabPage18->Size = System::Drawing::Size(1016, 466);
+				this->tabPage18->TabIndex = 0;
+				this->tabPage18->Text = L"Cliente";
+				this->tabPage18->UseVisualStyleBackColor = true;
 				// 
 				// tPConsPrecio
 				// 
+				this->tPConsPrecio->Controls->Add(this->button6);
+				this->tPConsPrecio->Controls->Add(this->label27);
+				this->tPConsPrecio->Controls->Add(this->label28);
+				this->tPConsPrecio->Controls->Add(this->label29);
+				this->tPConsPrecio->Controls->Add(this->tBMarcaConsPrA);
+				this->tPConsPrecio->Controls->Add(this->tBProdConsPrA);
+				this->tPConsPrecio->Controls->Add(this->tBPasConsPrA);
 				this->tPConsPrecio->Location = System::Drawing::Point(4, 22);
 				this->tPConsPrecio->Name = L"tPConsPrecio";
 				this->tPConsPrecio->Size = System::Drawing::Size(1039, 504);
@@ -1117,8 +1465,75 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsPrecio->Text = L"Consultar Precio";
 				this->tPConsPrecio->UseVisualStyleBackColor = true;
 				// 
+				// button6
+				// 
+				this->button6->Cursor = System::Windows::Forms::Cursors::WaitCursor;
+				this->button6->Location = System::Drawing::Point(501, 232);
+				this->button6->Name = L"button6";
+				this->button6->Size = System::Drawing::Size(54, 23);
+				this->button6->TabIndex = 34;
+				this->button6->Text = L"Listo";
+				this->button6->UseVisualStyleBackColor = true;
+				this->button6->UseWaitCursor = true;
+				this->button6->Click += gcnew System::EventHandler(this, &MenuPrincipal::button6_Click);
+				// 
+				// label27
+				// 
+				this->label27->AutoSize = true;
+				this->label27->Location = System::Drawing::Point(698, 139);
+				this->label27->Name = L"label27";
+				this->label27->Size = System::Drawing::Size(153, 13);
+				this->label27->TabIndex = 33;
+				this->label27->Text = L"Introduzca el número de marca";
+				this->label27->UseWaitCursor = true;
+				// 
+				// label28
+				// 
+				this->label28->AutoSize = true;
+				this->label28->Location = System::Drawing::Point(435, 139);
+				this->label28->Name = L"label28";
+				this->label28->Size = System::Drawing::Size(166, 13);
+				this->label28->TabIndex = 32;
+				this->label28->Text = L"Introduzca el número de producto";
+				this->label28->UseWaitCursor = true;
+				// 
+				// label29
+				// 
+				this->label29->AutoSize = true;
+				this->label29->Location = System::Drawing::Point(174, 139);
+				this->label29->Name = L"label29";
+				this->label29->Size = System::Drawing::Size(153, 13);
+				this->label29->TabIndex = 31;
+				this->label29->Text = L"Introduzca el número de pasillo";
+				this->label29->UseWaitCursor = true;
+				// 
+				// tBMarcaConsPrA
+				// 
+				this->tBMarcaConsPrA->Location = System::Drawing::Point(701, 166);
+				this->tBMarcaConsPrA->Name = L"tBMarcaConsPrA";
+				this->tBMarcaConsPrA->Size = System::Drawing::Size(114, 20);
+				this->tBMarcaConsPrA->TabIndex = 30;
+				this->tBMarcaConsPrA->UseWaitCursor = true;
+				// 
+				// tBProdConsPrA
+				// 
+				this->tBProdConsPrA->Location = System::Drawing::Point(438, 166);
+				this->tBProdConsPrA->Name = L"tBProdConsPrA";
+				this->tBProdConsPrA->Size = System::Drawing::Size(122, 20);
+				this->tBProdConsPrA->TabIndex = 29;
+				this->tBProdConsPrA->UseWaitCursor = true;
+				// 
+				// tBPasConsPrA
+				// 
+				this->tBPasConsPrA->Location = System::Drawing::Point(172, 166);
+				this->tBPasConsPrA->Name = L"tBPasConsPrA";
+				this->tBPasConsPrA->Size = System::Drawing::Size(102, 20);
+				this->tBPasConsPrA->TabIndex = 28;
+				this->tBPasConsPrA->UseWaitCursor = true;
+				// 
 				// tPConsDesc
 				// 
+				this->tPConsDesc->Controls->Add(this->button5);
 				this->tPConsDesc->Location = System::Drawing::Point(4, 22);
 				this->tPConsDesc->Name = L"tPConsDesc";
 				this->tPConsDesc->Size = System::Drawing::Size(1039, 504);
@@ -1126,8 +1541,22 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsDesc->Text = L"Consultar Descuento";
 				this->tPConsDesc->UseVisualStyleBackColor = true;
 				// 
+				// button5
+				// 
+				this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
+				this->button5->Location = System::Drawing::Point(369, 233);
+				this->button5->Name = L"button5";
+				this->button5->Size = System::Drawing::Size(177, 36);
+				this->button5->TabIndex = 27;
+				this->button5->Text = L"Consultar Descuento";
+				this->button5->UseVisualStyleBackColor = true;
+				this->button5->Click += gcnew System::EventHandler(this, &MenuPrincipal::button5_Click_1);
+				// 
 				// tPModDesc
 				// 
+				this->tPModDesc->Controls->Add(this->btnModDescAdmi);
+				this->tPModDesc->Controls->Add(this->label26);
+				this->tPModDesc->Controls->Add(this->tBModDescAdmi);
 				this->tPModDesc->Location = System::Drawing::Point(4, 22);
 				this->tPModDesc->Name = L"tPModDesc";
 				this->tPModDesc->Size = System::Drawing::Size(1039, 504);
@@ -1135,14 +1564,32 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPModDesc->Text = L"Modificar Descuento";
 				this->tPModDesc->UseVisualStyleBackColor = true;
 				// 
-				// tPRegCliente
+				// btnModDescAdmi
 				// 
-				this->tPRegCliente->Location = System::Drawing::Point(4, 22);
-				this->tPRegCliente->Name = L"tPRegCliente";
-				this->tPRegCliente->Size = System::Drawing::Size(1039, 504);
-				this->tPRegCliente->TabIndex = 5;
-				this->tPRegCliente->Text = L"Registrar Clientes";
-				this->tPRegCliente->UseVisualStyleBackColor = true;
+				this->btnModDescAdmi->Cursor = System::Windows::Forms::Cursors::Hand;
+				this->btnModDescAdmi->Location = System::Drawing::Point(370, 167);
+				this->btnModDescAdmi->Name = L"btnModDescAdmi";
+				this->btnModDescAdmi->Size = System::Drawing::Size(148, 23);
+				this->btnModDescAdmi->TabIndex = 26;
+				this->btnModDescAdmi->Text = L"Modificar Descuento";
+				this->btnModDescAdmi->UseVisualStyleBackColor = true;
+				this->btnModDescAdmi->Click += gcnew System::EventHandler(this, &MenuPrincipal::btnModDescAdmi_Click);
+				// 
+				// label26
+				// 
+				this->label26->AutoSize = true;
+				this->label26->Location = System::Drawing::Point(280, 94);
+				this->label26->Name = L"label26";
+				this->label26->Size = System::Drawing::Size(336, 13);
+				this->label26->TabIndex = 25;
+				this->label26->Text = L"Por favor inserte el porcentaje de descuento que desea aplicar: 0-100";
+				// 
+				// tBModDescAdmi
+				// 
+				this->tBModDescAdmi->Location = System::Drawing::Point(390, 129);
+				this->tBModDescAdmi->Name = L"tBModDescAdmi";
+				this->tBModDescAdmi->Size = System::Drawing::Size(102, 20);
+				this->tBModDescAdmi->TabIndex = 24;
 				// 
 				// tPFacturar
 				// 
@@ -2058,32 +2505,42 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->BtnInicial->UseWaitCursor = true;
 				this->BtnInicial->Click += gcnew System::EventHandler(this, &MenuPrincipal::BtnInicial_Click);
 				// 
-				// button4
+				// tabPage19
 				// 
-				this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button4->Location = System::Drawing::Point(446, 261);
-				this->button4->Name = L"button4";
-				this->button4->Size = System::Drawing::Size(54, 23);
-				this->button4->TabIndex = 32;
-				this->button4->Text = L"Listo";
-				this->button4->UseVisualStyleBackColor = true;
-				this->button4->Click += gcnew System::EventHandler(this, &MenuPrincipal::button4_Click);
+				this->tabPage19->Controls->Add(this->button7);
+				this->tabPage19->Controls->Add(this->textBox1);
+				this->tabPage19->Controls->Add(this->label30);
+				this->tabPage19->Location = System::Drawing::Point(4, 22);
+				this->tabPage19->Name = L"tabPage19";
+				this->tabPage19->Size = System::Drawing::Size(1016, 466);
+				this->tabPage19->TabIndex = 6;
+				this->tabPage19->Text = L"Pasillo";
+				this->tabPage19->UseVisualStyleBackColor = true;
 				// 
-				// label9
+				// label30
 				// 
-				this->label9->AutoSize = true;
-				this->label9->Location = System::Drawing::Point(443, 186);
-				this->label9->Name = L"label9";
-				this->label9->Size = System::Drawing::Size(153, 13);
-				this->label9->TabIndex = 31;
-				this->label9->Text = L"Introduzca el número de pasillo";
+				this->label30->AutoSize = true;
+				this->label30->Location = System::Drawing::Point(337, 108);
+				this->label30->Name = L"label30";
+				this->label30->Size = System::Drawing::Size(174, 13);
+				this->label30->TabIndex = 0;
+				this->label30->Text = L"Inserte el pasillo que desea agregar";
 				// 
-				// tBPasConsProdV
+				// textBox1
 				// 
-				this->tBPasConsProdV->Location = System::Drawing::Point(446, 213);
-				this->tBPasConsProdV->Name = L"tBPasConsProdV";
-				this->tBPasConsProdV->Size = System::Drawing::Size(102, 20);
-				this->tBPasConsProdV->TabIndex = 30;
+				this->textBox1->Location = System::Drawing::Point(372, 140);
+				this->textBox1->Name = L"textBox1";
+				this->textBox1->Size = System::Drawing::Size(100, 20);
+				this->textBox1->TabIndex = 1;
+				// 
+				// button7
+				// 
+				this->button7->Location = System::Drawing::Point(385, 187);
+				this->button7->Name = L"button7";
+				this->button7->Size = System::Drawing::Size(75, 23);
+				this->button7->TabIndex = 2;
+				this->button7->Text = L"button7";
+				this->button7->UseVisualStyleBackColor = true;
 				// 
 				// MenuPrincipal
 				// 
@@ -2114,6 +2571,17 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabControl2->ResumeLayout(false);
 				this->tPBasesDatos->ResumeLayout(false);
 				this->tabControl1->ResumeLayout(false);
+				this->tPIns->ResumeLayout(false);
+				this->tabControl4->ResumeLayout(false);
+				this->tPEliminar->ResumeLayout(false);
+				this->tabControl5->ResumeLayout(false);
+				this->tPModProd->ResumeLayout(false);
+				this->tabControl6->ResumeLayout(false);
+				this->tPConsPrecio->ResumeLayout(false);
+				this->tPConsPrecio->PerformLayout();
+				this->tPConsDesc->ResumeLayout(false);
+				this->tPModDesc->ResumeLayout(false);
+				this->tPModDesc->PerformLayout();
 				this->tPFacturar->ResumeLayout(false);
 				this->tPRevGondolas->ResumeLayout(false);
 				this->tPRevGondolas->PerformLayout();
@@ -2138,6 +2606,8 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsProd->PerformLayout();
 				this->tPComprar->ResumeLayout(false);
 				this->tPComprar->PerformLayout();
+				this->tabPage19->ResumeLayout(false);
+				this->tabPage19->PerformLayout();
 				this->ResumeLayout(false);
 				this->PerformLayout();
 
@@ -2594,6 +3064,52 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 		MessageBox::Show(msclr::interop::marshal_as<String^>("El pasillo digitado no se encuentra en nuestra base de datos, por favor intentelo de nuevo. Agradecemos su paciencia"));
 	}
 	pCodPasillo = 0;
+}
+private: System::Void btnModDescAdmi_Click(System::Object^ sender, System::EventArgs^ e) {
+	int descuentoNuevo= -1;
+	descuentoNuevo= stoi(this->toStandardString(this->tBModDescAdmi->Text));
+	if (descuentoNuevo>0 && descuentoNuevo<100) {
+		descuento = descuentoNuevo;
+		MessageBox::Show(msclr::interop::marshal_as<String^>("Descuento modificado exitosamente"));
+	}
+	else {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento sale de los márgenes esperados"));
+	}
+
+}
+private: System::Void button5_Click_1(System::Object^ sender, System::EventArgs^ e) {
+
+	MessageBox::Show(msclr::interop::marshal_as<String^>("El descuento aplicable es de: "+ to_string(descuento)+ "%"));
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	pCodPasillo = stoi(this->toStandardString(this->tBPasConsPrA->Text));
+	pCodProducto = stoi(this->toStandardString(this->tBProdConsPrA->Text));
+	pCodMarca = stoi(this->toStandardString(this->tBMarcaConsPrA->Text));
+	bool encontrado;
+	encontrado = A1.BuscarPasillo2(A1.raiz, pCodPasillo);
+	if (encontrado) {
+		LR.InsertarFinal(pCodPasillo);
+		encontrado = A1.BuscarProductoC(A1.raiz, pCodPasillo, pCodProducto);
+		if (encontrado) {
+			encontrado = A1.BuscarMarcaC(A1.raiz, pCodPasillo, pCodProducto, pCodMarca);
+			if (encontrado) {
+				int precio = A1.BuscarPrecio(A1.raiz, pCodPasillo, pCodProducto, pCodMarca);
+				MessageBox::Show(msclr::interop::marshal_as<String^>("El precio del producto consultado es de " + to_string(precio) + " unidades monetarias."));
+			}
+			else {
+				MessageBox::Show(msclr::interop::marshal_as<String^>("La marca digitada, dentro del pasillo y producto elegido no se encuentra en nuestra base de datos, por favor intentelo de nuevo. Agradecemos su paciencia"));
+			}
+		}
+		else {
+			MessageBox::Show(msclr::interop::marshal_as<String^>("El producto digitado no se encuentra en nuestra base de datos dentro del pasillo elegido, por favor intentelo de nuevo. Agradecemos su paciencia"));
+		}
+	}
+	else {
+		MessageBox::Show(msclr::interop::marshal_as<String^>("El pasillo digitado no se encuentra en nuestra base de datos, por favor intentelo de nuevo. Agradecemos su paciencia"));
+	}
+	pCodPasillo = 0;
+	pCodProducto = 0;
+	pCodMarca = 0;
 }
 };
 }
