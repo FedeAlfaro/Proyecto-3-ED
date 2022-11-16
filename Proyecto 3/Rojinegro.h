@@ -132,11 +132,11 @@ private:
  			return p->Precio;
 		}
         if(p->leftTree){
-        	buscarPrecio2(p->leftTree, pCodMarca);
+        	return buscarPrecio2(p->leftTree, pCodMarca);
 		}
                     
         if(p->rightTree){
-        	buscarPrecio2(p->rightTree, pCodMarca);
+        	return buscarPrecio2(p->rightTree, pCodMarca);
 		}
             
 	}
@@ -180,11 +180,11 @@ private:
 		if(p != NULL){
 			if(pCodMarca > p-> CodMarca){
 				p= p->rightTree;
-				BuscarMarcaC(p, pCodMarca);
+				return BuscarMarcaC(p, pCodMarca);
 			}
 			else if(pCodMarca < p-> CodMarca){
 				p= p->leftTree;
-				BuscarMarcaC(p, pCodMarca);
+				return BuscarMarcaC(p, pCodMarca);
 			}
 			else{
 				encontrado = true;

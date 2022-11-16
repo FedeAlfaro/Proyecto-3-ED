@@ -18,8 +18,8 @@ public:
 	void InsertaNodo(int pCodPasillo,string nombre);
     pNodoBinario InsertaNodo(pNodoBinario i, pNodoBinario r, pNodoBinario d);
     void PreordenI();
-    void InordenI();
-    string InordenR(pNodoBinario R, string resultado);
+	string InordenI(string resultado);
+    string InordenR2(pNodoBinario R, string resultado);
     void InordenR(pNodoBinario raiz);
     void InordenRAA(pNodoBinario raiz, int pCodPasillo, int pCodProducto);
     void PreordenR(pNodoBinario raiz);
@@ -253,24 +253,26 @@ void Binario::PreordenI(){
     }
 }
 
-void Binario::InordenI(){
-    NodoBinario *Act = raiz;
-    Pila p;
-    bool band=true;
-    while(band){
-        while(Act!=NULL){
-            p.Push(Act);
-            Act = Act->Hizq;
-        }
-        if(!p.Vacia()){
-            Act=p.Pop();
-            cout<<Act->CodPasillo<<" <-> ";
-            Act=Act->Hder;          
-        }
-        if(p.Vacia() && Act==NULL){
-            break;
-        }
-    }
+string Binario::InordenI(string resultado) {
+	NodoBinario* Act = raiz;
+	Pila p;
+	bool band = true;
+	while (band) {
+		while (Act != NULL) {
+			p.Push(Act);
+			Act = Act->Hder;
+		}
+		if (!p.Vacia()) {
+			Act = p.Pop();
+			string holi = to_string(Act->CodPasillo);
+			resultado += "Codigo del pasillo: " + holi + " Nombre del pasillo: " + Act->Nombre + "\n";
+			Act = Act->Hizq;
+		}
+		if (p.Vacia() && Act == NULL) {
+			break;
+		}
+	}
+	return resultado;
 }
 
 
@@ -305,10 +307,10 @@ void Binario::PreordenR(NodoBinario *R){
     }
 }
 
-string Binario::InordenR(pNodoBinario R, string resultado) { //se cambió el izq y der del cod original
+string Binario::InordenR2(pNodoBinario R, string resultado) { //se cambió el izq y der del cod original
 	if (R != NULL) {
 		try {
-			return InordenR(R->Hder, resultado);
+			return InordenR2(R->Hder, resultado);
 		}
 		catch (...) {
 			cout << "Error en inordenR der" << endl;
@@ -321,7 +323,7 @@ string Binario::InordenR(pNodoBinario R, string resultado) { //se cambió el izq 
 			cout << "Error en inordenR raiz" << endl;
 		}
 		try {
-			return InordenR(R->Hizq, resultado);
+			return InordenR2(R->Hizq, resultado);
 		}
 		catch (...) {
 			cout << "Error en inordenR izq" << endl;
@@ -569,11 +571,11 @@ bool Binario::BuscarMarcaC(pNodoBinario raiz, int pCodPasillo, int pCodProducto,
 	if(raiz != NULL){
 		if(pCodPasillo < raiz->CodPasillo){
 			raiz=raiz->Hder;
-			BuscarMarcaC(raiz, pCodPasillo, pCodProducto, pCodMarca);
+			return BuscarMarcaC(raiz, pCodPasillo, pCodProducto, pCodMarca);
 		}
 		else if(pCodPasillo > raiz->CodPasillo){
 			raiz=raiz->Hizq;
-			BuscarMarcaC(raiz, pCodPasillo, pCodProducto, pCodMarca);
+			return BuscarMarcaC(raiz, pCodPasillo, pCodProducto, pCodMarca);
 		}
 		else{
 			resultado= raiz->avl.BuscarMarcaC(raiz->avl.raiz, pCodProducto, pCodMarca);

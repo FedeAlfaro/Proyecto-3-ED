@@ -553,11 +553,11 @@ int ArbolAVL::BuscarPrecio(pNodoAVL raiz, int pCodProducto, int pCodMarca){
 	if(raiz != NULL){
 		if(pCodProducto > raiz->CodProducto){
 			raiz=raiz->Hder;
-			BuscarPrecio(raiz, pCodProducto, pCodMarca);
+			return BuscarPrecio(raiz, pCodProducto, pCodMarca);
 		}
 		else if(pCodProducto < raiz->CodProducto){
 			raiz=raiz->Hizq;
-			BuscarPrecio(raiz, pCodProducto, pCodMarca);
+			return BuscarPrecio(raiz, pCodProducto, pCodMarca);
 		}
 		else{
 			return raiz->rn.buscarPrecio2(pCodMarca);
@@ -586,11 +586,11 @@ bool ArbolAVL::BuscarProducto2(pNodoAVL raiz, int pCodProducto){
 	if(raiz != NULL){
 		if(pCodProducto > raiz->CodProducto){
 			raiz=raiz->Hder;
-			BuscarProducto2(raiz, pCodProducto);
+			return BuscarProducto2(raiz, pCodProducto);
 		}
 		else if(pCodProducto < raiz->CodProducto){
 			raiz=raiz->Hizq;
-			BuscarProducto2(raiz, pCodProducto);
+			return BuscarProducto2(raiz, pCodProducto);
 		}else{
 			if(raiz->rn.Vacio()){
 				cout<<endl<<"No hay marcas de este producto "<<endl;
@@ -603,6 +603,7 @@ bool ArbolAVL::BuscarProducto2(pNodoAVL raiz, int pCodProducto){
 	}else{
 		cout<<endl<<"No hay productos en este pasillo :( "<<endl;
 	}
+	return resultado;
 }
 
 bool ArbolAVL::BuscarMarcaC(pNodoAVL raiz, int pCodProducto, int pCodMarca){
@@ -610,11 +611,11 @@ bool ArbolAVL::BuscarMarcaC(pNodoAVL raiz, int pCodProducto, int pCodMarca){
 	if(raiz != NULL){
 		if(pCodProducto > raiz->CodProducto){
 			raiz=raiz->Hder;
-			BuscarMarcaC(raiz, pCodProducto, pCodMarca);
+			return BuscarMarcaC(raiz, pCodProducto, pCodMarca);
 		}
 		else if(pCodProducto < raiz->CodProducto){
 			raiz=raiz->Hizq;
-			BuscarMarcaC(raiz, pCodProducto, pCodMarca);
+			return BuscarMarcaC(raiz, pCodProducto, pCodMarca);
 		}
 		else{
 			resultado=raiz->rn.BuscarMarcaC(pCodMarca);
