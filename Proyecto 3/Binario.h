@@ -365,7 +365,7 @@ void Binario::InordenRAA(pNodoBinario raiz, int pCodPasillo, int pCodProducto){
 			InordenRAA(raiz, pCodPasillo, pCodProducto);
 		}
 		else{
-			raiz->avl.InordenRAA(raiz->avl.raiz, pCodProducto);
+			//raiz->avl.InordenRAA(raiz->avl.raiz, pCodProducto);
 		}	
 	}
 }

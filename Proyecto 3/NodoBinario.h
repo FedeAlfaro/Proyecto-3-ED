@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Rojinegro.h"
-#include "ArbolAA.h"
+#include "Header.h"
 #ifndef _NODOBINARIO_H
 #define	_NODOBINARIO_H
 
@@ -52,7 +52,7 @@ public:
 	void RotacionSimpleIzquierda(NodoAVL* &n, NodoAVL* &n1);
 	bool Vacio(NodoAVL *r) { return r==NULL; };
 	string InordenRAVL(NodoAVL *R,string resultado);
-	void InordenRAA(pNodoAVL raiz, int pCodProducto);
+	//string InordenRAA(pNodoAVL raiz, int pCodProducto);
 	void InsertarMarcas(pNodoAVL raiz, int pCodPasillo, int pCodProducto, int pCodMarca, string pNombre, int pCantidadGondola, int precio);
 	void InsertarInventarios(pNodoAVL raiz, int pCodPasillo, int pCodProducto, int pCodMarca, string pNombre, int pCantidadStock, int CodCanasta);
 	void BuscarMarca(pNodoAVL raiz, int pCodProducto, int direccion);
@@ -241,21 +241,22 @@ string ArbolAVL::InordenRAVL(NodoAVL *R,string resultado){ //se cambió el izq y 
     }
 }
 
-void ArbolAVL::InordenRAA(pNodoAVL raiz, int pCodProducto){
+/*
+string ArbolAVL::InordenRAA(pNodoAVL raiz, int pCodProducto){
 	if(raiz != NULL){
 		if(pCodProducto > raiz->CodProducto){
 			raiz=raiz->Hder;
-			InordenRAA(raiz, pCodProducto);
+			return InordenRAA(raiz, pCodProducto);
 		}
 		else if(pCodProducto < raiz->CodProducto){
 			raiz=raiz->Hizq;
-			InordenRAA(raiz, pCodProducto);
+			return InordenRAA(raiz, pCodProducto);
 		}
 		else{
-			return raiz->AA.InordenRAA(raiz->AA.raiz);
+			return raiz->AA.InordenI("");
 		}	
 	}
-}
+}*/
 
 void ArbolAVL::Equilibrar1(NodoAVL* n, bool Hh){
     NodoAVL *n1;

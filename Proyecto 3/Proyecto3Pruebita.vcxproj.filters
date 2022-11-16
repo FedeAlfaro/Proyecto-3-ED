@@ -56,9 +56,6 @@
     <ClInclude Include="MenuPrincipal.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ArbolAA.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Binario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -111,6 +108,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="MenuModificar.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

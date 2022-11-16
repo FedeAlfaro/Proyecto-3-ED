@@ -135,9 +135,9 @@
     <ClCompile Include="MenuModificar.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArbolAA.h" />
     <ClInclude Include="Binario.h" />
     <ClInclude Include="Clientes.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="MenuValidacionCliente.h">
       <FileType>CppForm</FileType>
     </ClInclude>
