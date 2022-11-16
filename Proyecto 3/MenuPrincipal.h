@@ -444,8 +444,8 @@ private: System::Windows::Forms::TabPage^ tPIns;
 
 
 	private: System::Windows::Forms::Button^ button11;
-	private: System::Windows::Forms::Button^ button25;
-	private: System::Windows::Forms::Button^ button24;
+
+
 	private: System::Windows::Forms::Label^ label24;
 	private: System::Windows::Forms::TextBox^ tPCantProd;
 	private: System::Windows::Forms::Button^ btnOp2;
@@ -490,12 +490,16 @@ private: System::Windows::Forms::TabPage^ tabPage5;
 private: System::Windows::Forms::TabPage^ tabPage6;
 private: System::Windows::Forms::TabPage^ tabPage1;
 private: System::Windows::Forms::TabPage^ tPEliminar;
-private: System::Windows::Forms::TabControl^ tabControl5;
+private: System::Windows::Forms::TabControl^ tBElCl;
+
+
+
 private: System::Windows::Forms::TabPage^ tabPage7;
 private: System::Windows::Forms::TabPage^ tabPage8;
 private: System::Windows::Forms::TabPage^ tabPage9;
 private: System::Windows::Forms::TabPage^ tabPage10;
-private: System::Windows::Forms::TabPage^ tabPage11;
+private: System::Windows::Forms::TabPage^ tBElimV;
+
 private: System::Windows::Forms::TabPage^ tabPage12;
 private: System::Windows::Forms::TabControl^ tabControl6;
 private: System::Windows::Forms::TabPage^ tabPage13;
@@ -548,6 +552,68 @@ private: System::Windows::Forms::Button^ button10;
 private: System::Windows::Forms::TextBox^ tBPasEl;
 private: System::Windows::Forms::Label^ label41;
 private: System::Windows::Forms::TabPage^ tabPage21;
+private: System::Windows::Forms::TextBox^ tBInsInvCB;
+
+private: System::Windows::Forms::Label^ label42;
+private: System::Windows::Forms::TextBox^ tBInsInvStock;
+
+private: System::Windows::Forms::Label^ label43;
+private: System::Windows::Forms::TextBox^ tBInsInvNom;
+
+
+private: System::Windows::Forms::Label^ label44;
+private: System::Windows::Forms::TextBox^ tBInsProdInv;
+
+private: System::Windows::Forms::Label^ label45;
+private: System::Windows::Forms::TextBox^ tBInsInv;
+
+private: System::Windows::Forms::Label^ label46;
+private: System::Windows::Forms::Button^ button12;
+private: System::Windows::Forms::TextBox^ tBInsPasInv;
+
+private: System::Windows::Forms::Label^ label47;
+private: System::Windows::Forms::TextBox^ tBInsAdminNom;
+
+
+private: System::Windows::Forms::Label^ label48;
+private: System::Windows::Forms::Button^ button22;
+private: System::Windows::Forms::TextBox^ tBInsAdmin;
+private: System::Windows::Forms::Label^ label49;
+private: System::Windows::Forms::TextBox^ tBInsAdminCo;
+private: System::Windows::Forms::Label^ label51;
+private: System::Windows::Forms::TextBox^ tBInsAdminTel;
+private: System::Windows::Forms::Label^ label50;
+private: System::Windows::Forms::TextBox^ tBInsVNom;
+private: System::Windows::Forms::Label^ label54;
+private: System::Windows::Forms::Button^ button26;
+private: System::Windows::Forms::TextBox^ tBInsV;
+private: System::Windows::Forms::Label^ label55;
+private: System::Windows::Forms::TextBox^ tBInsClCo;
+
+private: System::Windows::Forms::Label^ label52;
+private: System::Windows::Forms::TextBox^ tBInsClTel;
+
+private: System::Windows::Forms::Label^ label53;
+private: System::Windows::Forms::TextBox^ tBInsClNom;
+
+private: System::Windows::Forms::Label^ label56;
+private: System::Windows::Forms::Button^ button27;
+private: System::Windows::Forms::TextBox^ tBInsCl;
+private: System::Windows::Forms::Label^ label57;
+private: System::Windows::Forms::TextBox^ tBProdEl;
+private: System::Windows::Forms::Label^ label59;
+private: System::Windows::Forms::Button^ button24;
+private: System::Windows::Forms::TextBox^ tBPasProdEl;
+private: System::Windows::Forms::Label^ label58;
+private: System::Windows::Forms::Button^ button25;
+private: System::Windows::Forms::TextBox^ tBElAdmin;
+private: System::Windows::Forms::Label^ label60;
+private: System::Windows::Forms::Button^ button28;
+private: System::Windows::Forms::TextBox^ tBElV;
+private: System::Windows::Forms::Label^ label61;
+private: System::Windows::Forms::Button^ button29;
+private: System::Windows::Forms::TextBox^ textBox2;
+private: System::Windows::Forms::Label^ label62;
 
 
 
@@ -777,19 +843,74 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tBInsPasMarca = (gcnew System::Windows::Forms::TextBox());
 				this->label37 = (gcnew System::Windows::Forms::Label());
 				this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+				this->tBInsInvCB = (gcnew System::Windows::Forms::TextBox());
+				this->label42 = (gcnew System::Windows::Forms::Label());
+				this->tBInsInvStock = (gcnew System::Windows::Forms::TextBox());
+				this->label43 = (gcnew System::Windows::Forms::Label());
+				this->tBInsInvNom = (gcnew System::Windows::Forms::TextBox());
+				this->label44 = (gcnew System::Windows::Forms::Label());
+				this->tBInsProdInv = (gcnew System::Windows::Forms::TextBox());
+				this->label45 = (gcnew System::Windows::Forms::Label());
+				this->tBInsInv = (gcnew System::Windows::Forms::TextBox());
+				this->label46 = (gcnew System::Windows::Forms::Label());
+				this->button12 = (gcnew System::Windows::Forms::Button());
+				this->tBInsPasInv = (gcnew System::Windows::Forms::TextBox());
+				this->label47 = (gcnew System::Windows::Forms::Label());
 				this->tabPage5 = (gcnew System::Windows::Forms::TabPage());
+				this->tBInsAdminCo = (gcnew System::Windows::Forms::TextBox());
+				this->label51 = (gcnew System::Windows::Forms::Label());
+				this->tBInsAdminTel = (gcnew System::Windows::Forms::TextBox());
+				this->label50 = (gcnew System::Windows::Forms::Label());
+				this->tBInsAdminNom = (gcnew System::Windows::Forms::TextBox());
+				this->label48 = (gcnew System::Windows::Forms::Label());
+				this->button22 = (gcnew System::Windows::Forms::Button());
+				this->tBInsAdmin = (gcnew System::Windows::Forms::TextBox());
+				this->label49 = (gcnew System::Windows::Forms::Label());
 				this->tabPage6 = (gcnew System::Windows::Forms::TabPage());
+				this->tBInsVNom = (gcnew System::Windows::Forms::TextBox());
+				this->label54 = (gcnew System::Windows::Forms::Label());
+				this->button26 = (gcnew System::Windows::Forms::Button());
+				this->tBInsV = (gcnew System::Windows::Forms::TextBox());
+				this->label55 = (gcnew System::Windows::Forms::Label());
 				this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+				this->tBInsClCo = (gcnew System::Windows::Forms::TextBox());
+				this->label52 = (gcnew System::Windows::Forms::Label());
+				this->tBInsClTel = (gcnew System::Windows::Forms::TextBox());
+				this->label53 = (gcnew System::Windows::Forms::Label());
+				this->tBInsClNom = (gcnew System::Windows::Forms::TextBox());
+				this->label56 = (gcnew System::Windows::Forms::Label());
+				this->button27 = (gcnew System::Windows::Forms::Button());
+				this->tBInsCl = (gcnew System::Windows::Forms::TextBox());
+				this->label57 = (gcnew System::Windows::Forms::Label());
 				this->tPEliminar = (gcnew System::Windows::Forms::TabPage());
-				this->tabControl5 = (gcnew System::Windows::Forms::TabControl());
+				this->tBElCl = (gcnew System::Windows::Forms::TabControl());
+				this->tabPage20 = (gcnew System::Windows::Forms::TabPage());
+				this->button10 = (gcnew System::Windows::Forms::Button());
+				this->tBPasEl = (gcnew System::Windows::Forms::TextBox());
+				this->label41 = (gcnew System::Windows::Forms::Label());
 				this->tabPage7 = (gcnew System::Windows::Forms::TabPage());
+				this->tBProdEl = (gcnew System::Windows::Forms::TextBox());
+				this->label59 = (gcnew System::Windows::Forms::Label());
+				this->button24 = (gcnew System::Windows::Forms::Button());
+				this->tBPasProdEl = (gcnew System::Windows::Forms::TextBox());
+				this->label58 = (gcnew System::Windows::Forms::Label());
 				this->tabPage8 = (gcnew System::Windows::Forms::TabPage());
 				this->tabPage9 = (gcnew System::Windows::Forms::TabPage());
 				this->tabPage10 = (gcnew System::Windows::Forms::TabPage());
-				this->tabPage11 = (gcnew System::Windows::Forms::TabPage());
+				this->button25 = (gcnew System::Windows::Forms::Button());
+				this->tBElAdmin = (gcnew System::Windows::Forms::TextBox());
+				this->label60 = (gcnew System::Windows::Forms::Label());
+				this->tBElimV = (gcnew System::Windows::Forms::TabPage());
+				this->button28 = (gcnew System::Windows::Forms::Button());
+				this->tBElV = (gcnew System::Windows::Forms::TextBox());
+				this->label61 = (gcnew System::Windows::Forms::Label());
 				this->tabPage12 = (gcnew System::Windows::Forms::TabPage());
+				this->button29 = (gcnew System::Windows::Forms::Button());
+				this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+				this->label62 = (gcnew System::Windows::Forms::Label());
 				this->tPModProd = (gcnew System::Windows::Forms::TabPage());
 				this->tabControl6 = (gcnew System::Windows::Forms::TabControl());
+				this->tabPage21 = (gcnew System::Windows::Forms::TabPage());
 				this->tabPage13 = (gcnew System::Windows::Forms::TabPage());
 				this->tabPage14 = (gcnew System::Windows::Forms::TabPage());
 				this->tabPage15 = (gcnew System::Windows::Forms::TabPage());
@@ -884,8 +1005,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->btnOp1 = (gcnew System::Windows::Forms::Button());
 				this->label24 = (gcnew System::Windows::Forms::Label());
 				this->tPCantProd = (gcnew System::Windows::Forms::TextBox());
-				this->button25 = (gcnew System::Windows::Forms::Button());
-				this->button24 = (gcnew System::Windows::Forms::Button());
 				this->button11 = (gcnew System::Windows::Forms::Button());
 				this->label21 = (gcnew System::Windows::Forms::Label());
 				this->button13 = (gcnew System::Windows::Forms::Button());
@@ -900,11 +1019,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->textBoxClientes = (gcnew System::Windows::Forms::TextBox());
 				this->label1 = (gcnew System::Windows::Forms::Label());
 				this->BtnInicial = (gcnew System::Windows::Forms::Button());
-				this->tabPage20 = (gcnew System::Windows::Forms::TabPage());
-				this->tabPage21 = (gcnew System::Windows::Forms::TabPage());
-				this->button10 = (gcnew System::Windows::Forms::Button());
-				this->tBPasEl = (gcnew System::Windows::Forms::TextBox());
-				this->label41 = (gcnew System::Windows::Forms::Label());
 				this->tCMenuPrinc->SuspendLayout();
 				this->tPVendedor->SuspendLayout();
 				this->tCVendedor->SuspendLayout();
@@ -920,8 +1034,17 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage19->SuspendLayout();
 				this->tabPage2->SuspendLayout();
 				this->tabPage3->SuspendLayout();
+				this->tabPage4->SuspendLayout();
+				this->tabPage5->SuspendLayout();
+				this->tabPage6->SuspendLayout();
+				this->tabPage1->SuspendLayout();
 				this->tPEliminar->SuspendLayout();
-				this->tabControl5->SuspendLayout();
+				this->tBElCl->SuspendLayout();
+				this->tabPage20->SuspendLayout();
+				this->tabPage7->SuspendLayout();
+				this->tabPage10->SuspendLayout();
+				this->tBElimV->SuspendLayout();
+				this->tabPage12->SuspendLayout();
 				this->tPModProd->SuspendLayout();
 				this->tabControl6->SuspendLayout();
 				this->tPConsPrecio->SuspendLayout();
@@ -942,7 +1065,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsultaDesc->SuspendLayout();
 				this->tPConsProd->SuspendLayout();
 				this->tPComprar->SuspendLayout();
-				this->tabPage20->SuspendLayout();
 				this->SuspendLayout();
 				// 
 				// titulo
@@ -1554,6 +1676,19 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// 
 				// tabPage4
 				// 
+				this->tabPage4->Controls->Add(this->tBInsInvCB);
+				this->tabPage4->Controls->Add(this->label42);
+				this->tabPage4->Controls->Add(this->tBInsInvStock);
+				this->tabPage4->Controls->Add(this->label43);
+				this->tabPage4->Controls->Add(this->tBInsInvNom);
+				this->tabPage4->Controls->Add(this->label44);
+				this->tabPage4->Controls->Add(this->tBInsProdInv);
+				this->tabPage4->Controls->Add(this->label45);
+				this->tabPage4->Controls->Add(this->tBInsInv);
+				this->tabPage4->Controls->Add(this->label46);
+				this->tabPage4->Controls->Add(this->button12);
+				this->tabPage4->Controls->Add(this->tBInsPasInv);
+				this->tabPage4->Controls->Add(this->label47);
 				this->tabPage4->Location = System::Drawing::Point(4, 22);
 				this->tabPage4->Name = L"tabPage4";
 				this->tabPage4->Size = System::Drawing::Size(1016, 466);
@@ -1561,8 +1696,125 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage4->Text = L"Inventario";
 				this->tabPage4->UseVisualStyleBackColor = true;
 				// 
+				// tBInsInvCB
+				// 
+				this->tBInsInvCB->Location = System::Drawing::Point(376, 313);
+				this->tBInsInvCB->Name = L"tBInsInvCB";
+				this->tBInsInvCB->Size = System::Drawing::Size(100, 20);
+				this->tBInsInvCB->TabIndex = 37;
+				this->tBInsInvCB->TextChanged += gcnew System::EventHandler(this, &MenuPrincipal::textBox1_TextChanged);
+				// 
+				// label42
+				// 
+				this->label42->AutoSize = true;
+				this->label42->Location = System::Drawing::Point(373, 284);
+				this->label42->Name = L"label42";
+				this->label42->Size = System::Drawing::Size(186, 13);
+				this->label42->TabIndex = 36;
+				this->label42->Text = L"Inserte el código de la canasta básica";
+				// 
+				// tBInsInvStock
+				// 
+				this->tBInsInvStock->Location = System::Drawing::Point(191, 310);
+				this->tBInsInvStock->Name = L"tBInsInvStock";
+				this->tBInsInvStock->Size = System::Drawing::Size(100, 20);
+				this->tBInsInvStock->TabIndex = 35;
+				this->tBInsInvStock->TextChanged += gcnew System::EventHandler(this, &MenuPrincipal::textBox2_TextChanged);
+				// 
+				// label43
+				// 
+				this->label43->AutoSize = true;
+				this->label43->Location = System::Drawing::Point(188, 281);
+				this->label43->Name = L"label43";
+				this->label43->Size = System::Drawing::Size(138, 13);
+				this->label43->TabIndex = 34;
+				this->label43->Text = L"Inserte la cantidad en stock";
+				// 
+				// tBInsInvNom
+				// 
+				this->tBInsInvNom->Location = System::Drawing::Point(686, 159);
+				this->tBInsInvNom->Name = L"tBInsInvNom";
+				this->tBInsInvNom->Size = System::Drawing::Size(100, 20);
+				this->tBInsInvNom->TabIndex = 33;
+				// 
+				// label44
+				// 
+				this->label44->AutoSize = true;
+				this->label44->Location = System::Drawing::Point(683, 130);
+				this->label44->Name = L"label44";
+				this->label44->Size = System::Drawing::Size(146, 13);
+				this->label44->TabIndex = 32;
+				this->label44->Text = L"Inserte el nombre de la marca";
+				// 
+				// tBInsProdInv
+				// 
+				this->tBInsProdInv->Location = System::Drawing::Point(343, 159);
+				this->tBInsProdInv->Name = L"tBInsProdInv";
+				this->tBInsProdInv->Size = System::Drawing::Size(100, 20);
+				this->tBInsProdInv->TabIndex = 31;
+				// 
+				// label45
+				// 
+				this->label45->AutoSize = true;
+				this->label45->Location = System::Drawing::Point(340, 130);
+				this->label45->Name = L"label45";
+				this->label45->Size = System::Drawing::Size(147, 13);
+				this->label45->TabIndex = 30;
+				this->label45->Text = L"Inserte el codigo del producto";
+				// 
+				// tBInsInv
+				// 
+				this->tBInsInv->Location = System::Drawing::Point(520, 159);
+				this->tBInsInv->Name = L"tBInsInv";
+				this->tBInsInv->Size = System::Drawing::Size(100, 20);
+				this->tBInsInv->TabIndex = 29;
+				// 
+				// label46
+				// 
+				this->label46->AutoSize = true;
+				this->label46->Location = System::Drawing::Point(517, 130);
+				this->label46->Name = L"label46";
+				this->label46->Size = System::Drawing::Size(143, 13);
+				this->label46->TabIndex = 28;
+				this->label46->Text = L"Inserte el codigo de la marca";
+				// 
+				// button12
+				// 
+				this->button12->Location = System::Drawing::Point(738, 313);
+				this->button12->Name = L"button12";
+				this->button12->Size = System::Drawing::Size(75, 23);
+				this->button12->TabIndex = 27;
+				this->button12->Text = L"Agregar";
+				this->button12->UseVisualStyleBackColor = true;
+				this->button12->Click += gcnew System::EventHandler(this, &MenuPrincipal::button12_Click);
+				// 
+				// tBInsPasInv
+				// 
+				this->tBInsPasInv->Location = System::Drawing::Point(191, 159);
+				this->tBInsPasInv->Name = L"tBInsPasInv";
+				this->tBInsPasInv->Size = System::Drawing::Size(100, 20);
+				this->tBInsPasInv->TabIndex = 26;
+				// 
+				// label47
+				// 
+				this->label47->AutoSize = true;
+				this->label47->Location = System::Drawing::Point(188, 130);
+				this->label47->Name = L"label47";
+				this->label47->Size = System::Drawing::Size(134, 13);
+				this->label47->TabIndex = 25;
+				this->label47->Text = L"Inserte el codigo del pasillo";
+				// 
 				// tabPage5
 				// 
+				this->tabPage5->Controls->Add(this->tBInsAdminCo);
+				this->tabPage5->Controls->Add(this->label51);
+				this->tabPage5->Controls->Add(this->tBInsAdminTel);
+				this->tabPage5->Controls->Add(this->label50);
+				this->tabPage5->Controls->Add(this->tBInsAdminNom);
+				this->tabPage5->Controls->Add(this->label48);
+				this->tabPage5->Controls->Add(this->button22);
+				this->tabPage5->Controls->Add(this->tBInsAdmin);
+				this->tabPage5->Controls->Add(this->label49);
 				this->tabPage5->Location = System::Drawing::Point(4, 22);
 				this->tabPage5->Name = L"tabPage5";
 				this->tabPage5->Size = System::Drawing::Size(1016, 466);
@@ -1570,8 +1822,89 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage5->Text = L"Registrar Administrador";
 				this->tabPage5->UseVisualStyleBackColor = true;
 				// 
+				// tBInsAdminCo
+				// 
+				this->tBInsAdminCo->Location = System::Drawing::Point(553, 167);
+				this->tBInsAdminCo->Name = L"tBInsAdminCo";
+				this->tBInsAdminCo->Size = System::Drawing::Size(100, 20);
+				this->tBInsAdminCo->TabIndex = 13;
+				// 
+				// label51
+				// 
+				this->label51->AutoSize = true;
+				this->label51->Location = System::Drawing::Point(550, 138);
+				this->label51->Name = L"label51";
+				this->label51->Size = System::Drawing::Size(83, 13);
+				this->label51->TabIndex = 12;
+				this->label51->Text = L"Inserte el correo";
+				// 
+				// tBInsAdminTel
+				// 
+				this->tBInsAdminTel->Location = System::Drawing::Point(406, 167);
+				this->tBInsAdminTel->Name = L"tBInsAdminTel";
+				this->tBInsAdminTel->Size = System::Drawing::Size(100, 20);
+				this->tBInsAdminTel->TabIndex = 11;
+				// 
+				// label50
+				// 
+				this->label50->AutoSize = true;
+				this->label50->Location = System::Drawing::Point(403, 138);
+				this->label50->Name = L"label50";
+				this->label50->Size = System::Drawing::Size(91, 13);
+				this->label50->TabIndex = 10;
+				this->label50->Text = L"Inserte el telefono";
+				// 
+				// tBInsAdminNom
+				// 
+				this->tBInsAdminNom->Location = System::Drawing::Point(255, 167);
+				this->tBInsAdminNom->Name = L"tBInsAdminNom";
+				this->tBInsAdminNom->Size = System::Drawing::Size(100, 20);
+				this->tBInsAdminNom->TabIndex = 9;
+				this->tBInsAdminNom->TextChanged += gcnew System::EventHandler(this, &MenuPrincipal::textBox1_TextChanged_1);
+				// 
+				// label48
+				// 
+				this->label48->AutoSize = true;
+				this->label48->Location = System::Drawing::Point(252, 138);
+				this->label48->Name = L"label48";
+				this->label48->Size = System::Drawing::Size(88, 13);
+				this->label48->TabIndex = 8;
+				this->label48->Text = L"Inserte el nombre";
+				// 
+				// button22
+				// 
+				this->button22->Location = System::Drawing::Point(431, 260);
+				this->button22->Name = L"button22";
+				this->button22->Size = System::Drawing::Size(75, 23);
+				this->button22->TabIndex = 7;
+				this->button22->Text = L"Agregar";
+				this->button22->UseVisualStyleBackColor = true;
+				this->button22->Click += gcnew System::EventHandler(this, &MenuPrincipal::button22_Click);
+				// 
+				// tBInsAdmin
+				// 
+				this->tBInsAdmin->Location = System::Drawing::Point(93, 167);
+				this->tBInsAdmin->Name = L"tBInsAdmin";
+				this->tBInsAdmin->Size = System::Drawing::Size(100, 20);
+				this->tBInsAdmin->TabIndex = 6;
+				this->tBInsAdmin->TextChanged += gcnew System::EventHandler(this, &MenuPrincipal::tBInsAdmin_TextChanged);
+				// 
+				// label49
+				// 
+				this->label49->AutoSize = true;
+				this->label49->Location = System::Drawing::Point(90, 138);
+				this->label49->Name = L"label49";
+				this->label49->Size = System::Drawing::Size(116, 13);
+				this->label49->TabIndex = 5;
+				this->label49->Text = L"Inserte el codigo admin";
+				// 
 				// tabPage6
 				// 
+				this->tabPage6->Controls->Add(this->tBInsVNom);
+				this->tabPage6->Controls->Add(this->label54);
+				this->tabPage6->Controls->Add(this->button26);
+				this->tabPage6->Controls->Add(this->tBInsV);
+				this->tabPage6->Controls->Add(this->label55);
 				this->tabPage6->Location = System::Drawing::Point(4, 22);
 				this->tabPage6->Name = L"tabPage6";
 				this->tabPage6->Size = System::Drawing::Size(1016, 466);
@@ -1579,8 +1912,59 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage6->Text = L"Registrar Vendedor";
 				this->tabPage6->UseVisualStyleBackColor = true;
 				// 
+				// tBInsVNom
+				// 
+				this->tBInsVNom->Location = System::Drawing::Point(365, 167);
+				this->tBInsVNom->Name = L"tBInsVNom";
+				this->tBInsVNom->Size = System::Drawing::Size(100, 20);
+				this->tBInsVNom->TabIndex = 18;
+				// 
+				// label54
+				// 
+				this->label54->AutoSize = true;
+				this->label54->Location = System::Drawing::Point(362, 138);
+				this->label54->Name = L"label54";
+				this->label54->Size = System::Drawing::Size(88, 13);
+				this->label54->TabIndex = 17;
+				this->label54->Text = L"Inserte el nombre";
+				// 
+				// button26
+				// 
+				this->button26->Location = System::Drawing::Point(308, 263);
+				this->button26->Name = L"button26";
+				this->button26->Size = System::Drawing::Size(75, 23);
+				this->button26->TabIndex = 16;
+				this->button26->Text = L"Agregar";
+				this->button26->UseVisualStyleBackColor = true;
+				this->button26->Click += gcnew System::EventHandler(this, &MenuPrincipal::button26_Click);
+				// 
+				// tBInsV
+				// 
+				this->tBInsV->Location = System::Drawing::Point(203, 167);
+				this->tBInsV->Name = L"tBInsV";
+				this->tBInsV->Size = System::Drawing::Size(100, 20);
+				this->tBInsV->TabIndex = 15;
+				// 
+				// label55
+				// 
+				this->label55->AutoSize = true;
+				this->label55->Location = System::Drawing::Point(200, 138);
+				this->label55->Name = L"label55";
+				this->label55->Size = System::Drawing::Size(133, 13);
+				this->label55->TabIndex = 14;
+				this->label55->Text = L"Inserte el codigo vendedor";
+				// 
 				// tabPage1
 				// 
+				this->tabPage1->Controls->Add(this->tBInsClCo);
+				this->tabPage1->Controls->Add(this->label52);
+				this->tabPage1->Controls->Add(this->tBInsClTel);
+				this->tabPage1->Controls->Add(this->label53);
+				this->tabPage1->Controls->Add(this->tBInsClNom);
+				this->tabPage1->Controls->Add(this->label56);
+				this->tabPage1->Controls->Add(this->button27);
+				this->tabPage1->Controls->Add(this->tBInsCl);
+				this->tabPage1->Controls->Add(this->label57);
 				this->tabPage1->Location = System::Drawing::Point(4, 22);
 				this->tabPage1->Name = L"tabPage1";
 				this->tabPage1->Padding = System::Windows::Forms::Padding(3);
@@ -1588,10 +1972,85 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage1->TabIndex = 0;
 				this->tabPage1->Text = L"Registrar Cliente";
 				this->tabPage1->UseVisualStyleBackColor = true;
+				this->tabPage1->Click += gcnew System::EventHandler(this, &MenuPrincipal::tabPage1_Click);
+				// 
+				// tBInsClCo
+				// 
+				this->tBInsClCo->Location = System::Drawing::Point(687, 155);
+				this->tBInsClCo->Name = L"tBInsClCo";
+				this->tBInsClCo->Size = System::Drawing::Size(100, 20);
+				this->tBInsClCo->TabIndex = 22;
+				// 
+				// label52
+				// 
+				this->label52->AutoSize = true;
+				this->label52->Location = System::Drawing::Point(684, 126);
+				this->label52->Name = L"label52";
+				this->label52->Size = System::Drawing::Size(83, 13);
+				this->label52->TabIndex = 21;
+				this->label52->Text = L"Inserte el correo";
+				// 
+				// tBInsClTel
+				// 
+				this->tBInsClTel->Location = System::Drawing::Point(540, 155);
+				this->tBInsClTel->Name = L"tBInsClTel";
+				this->tBInsClTel->Size = System::Drawing::Size(100, 20);
+				this->tBInsClTel->TabIndex = 20;
+				// 
+				// label53
+				// 
+				this->label53->AutoSize = true;
+				this->label53->Location = System::Drawing::Point(537, 126);
+				this->label53->Name = L"label53";
+				this->label53->Size = System::Drawing::Size(91, 13);
+				this->label53->TabIndex = 19;
+				this->label53->Text = L"Inserte el telefono";
+				// 
+				// tBInsClNom
+				// 
+				this->tBInsClNom->Location = System::Drawing::Point(389, 155);
+				this->tBInsClNom->Name = L"tBInsClNom";
+				this->tBInsClNom->Size = System::Drawing::Size(100, 20);
+				this->tBInsClNom->TabIndex = 18;
+				// 
+				// label56
+				// 
+				this->label56->AutoSize = true;
+				this->label56->Location = System::Drawing::Point(386, 126);
+				this->label56->Name = L"label56";
+				this->label56->Size = System::Drawing::Size(88, 13);
+				this->label56->TabIndex = 17;
+				this->label56->Text = L"Inserte el nombre";
+				// 
+				// button27
+				// 
+				this->button27->Location = System::Drawing::Point(510, 248);
+				this->button27->Name = L"button27";
+				this->button27->Size = System::Drawing::Size(75, 23);
+				this->button27->TabIndex = 16;
+				this->button27->Text = L"Agregar";
+				this->button27->UseVisualStyleBackColor = true;
+				this->button27->Click += gcnew System::EventHandler(this, &MenuPrincipal::button27_Click);
+				// 
+				// tBInsCl
+				// 
+				this->tBInsCl->Location = System::Drawing::Point(227, 155);
+				this->tBInsCl->Name = L"tBInsCl";
+				this->tBInsCl->Size = System::Drawing::Size(100, 20);
+				this->tBInsCl->TabIndex = 15;
+				// 
+				// label57
+				// 
+				this->label57->AutoSize = true;
+				this->label57->Location = System::Drawing::Point(224, 126);
+				this->label57->Name = L"label57";
+				this->label57->Size = System::Drawing::Size(85, 13);
+				this->label57->TabIndex = 14;
+				this->label57->Text = L"Inserte el cedula";
 				// 
 				// tPEliminar
 				// 
-				this->tPEliminar->Controls->Add(this->tabControl5);
+				this->tPEliminar->Controls->Add(this->tBElCl);
 				this->tPEliminar->Location = System::Drawing::Point(4, 22);
 				this->tPEliminar->Name = L"tPEliminar";
 				this->tPEliminar->Size = System::Drawing::Size(1039, 504);
@@ -1599,23 +2058,66 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPEliminar->Text = L"Eliminar";
 				this->tPEliminar->UseVisualStyleBackColor = true;
 				// 
-				// tabControl5
+				// tBElCl
 				// 
-				this->tabControl5->Controls->Add(this->tabPage20);
-				this->tabControl5->Controls->Add(this->tabPage7);
-				this->tabControl5->Controls->Add(this->tabPage8);
-				this->tabControl5->Controls->Add(this->tabPage9);
-				this->tabControl5->Controls->Add(this->tabPage10);
-				this->tabControl5->Controls->Add(this->tabPage11);
-				this->tabControl5->Controls->Add(this->tabPage12);
-				this->tabControl5->Location = System::Drawing::Point(7, 6);
-				this->tabControl5->Name = L"tabControl5";
-				this->tabControl5->SelectedIndex = 0;
-				this->tabControl5->Size = System::Drawing::Size(1024, 492);
-				this->tabControl5->TabIndex = 1;
+				this->tBElCl->Controls->Add(this->tabPage20);
+				this->tBElCl->Controls->Add(this->tabPage7);
+				this->tBElCl->Controls->Add(this->tabPage8);
+				this->tBElCl->Controls->Add(this->tabPage9);
+				this->tBElCl->Controls->Add(this->tabPage10);
+				this->tBElCl->Controls->Add(this->tBElimV);
+				this->tBElCl->Controls->Add(this->tabPage12);
+				this->tBElCl->Location = System::Drawing::Point(7, 6);
+				this->tBElCl->Name = L"tBElCl";
+				this->tBElCl->SelectedIndex = 0;
+				this->tBElCl->Size = System::Drawing::Size(1024, 492);
+				this->tBElCl->TabIndex = 1;
+				// 
+				// tabPage20
+				// 
+				this->tabPage20->Controls->Add(this->button10);
+				this->tabPage20->Controls->Add(this->tBPasEl);
+				this->tabPage20->Controls->Add(this->label41);
+				this->tabPage20->Location = System::Drawing::Point(4, 22);
+				this->tabPage20->Name = L"tabPage20";
+				this->tabPage20->Size = System::Drawing::Size(1016, 466);
+				this->tabPage20->TabIndex = 6;
+				this->tabPage20->Text = L"Pasillos";
+				this->tabPage20->UseVisualStyleBackColor = true;
+				// 
+				// button10
+				// 
+				this->button10->Location = System::Drawing::Point(393, 260);
+				this->button10->Name = L"button10";
+				this->button10->Size = System::Drawing::Size(75, 23);
+				this->button10->TabIndex = 5;
+				this->button10->Text = L"Eliminar";
+				this->button10->UseVisualStyleBackColor = true;
+				this->button10->Click += gcnew System::EventHandler(this, &MenuPrincipal::button10_Click);
+				// 
+				// tBPasEl
+				// 
+				this->tBPasEl->Location = System::Drawing::Point(377, 213);
+				this->tBPasEl->Name = L"tBPasEl";
+				this->tBPasEl->Size = System::Drawing::Size(100, 20);
+				this->tBPasEl->TabIndex = 4;
+				// 
+				// label41
+				// 
+				this->label41->AutoSize = true;
+				this->label41->Location = System::Drawing::Point(362, 182);
+				this->label41->Name = L"label41";
+				this->label41->Size = System::Drawing::Size(134, 13);
+				this->label41->TabIndex = 3;
+				this->label41->Text = L"Inserte el codigo del pasillo";
 				// 
 				// tabPage7
 				// 
+				this->tabPage7->Controls->Add(this->tBProdEl);
+				this->tabPage7->Controls->Add(this->label59);
+				this->tabPage7->Controls->Add(this->button24);
+				this->tabPage7->Controls->Add(this->tBPasProdEl);
+				this->tabPage7->Controls->Add(this->label58);
 				this->tabPage7->Location = System::Drawing::Point(4, 22);
 				this->tabPage7->Name = L"tabPage7";
 				this->tabPage7->Padding = System::Windows::Forms::Padding(3);
@@ -1623,6 +2125,48 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage7->TabIndex = 1;
 				this->tabPage7->Text = L"Producto";
 				this->tabPage7->UseVisualStyleBackColor = true;
+				// 
+				// tBProdEl
+				// 
+				this->tBProdEl->Location = System::Drawing::Point(533, 200);
+				this->tBProdEl->Name = L"tBProdEl";
+				this->tBProdEl->Size = System::Drawing::Size(100, 20);
+				this->tBProdEl->TabIndex = 10;
+				// 
+				// label59
+				// 
+				this->label59->AutoSize = true;
+				this->label59->Location = System::Drawing::Point(518, 169);
+				this->label59->Name = L"label59";
+				this->label59->Size = System::Drawing::Size(147, 13);
+				this->label59->TabIndex = 9;
+				this->label59->Text = L"Inserte el codigo del producto";
+				// 
+				// button24
+				// 
+				this->button24->Location = System::Drawing::Point(449, 264);
+				this->button24->Name = L"button24";
+				this->button24->Size = System::Drawing::Size(75, 23);
+				this->button24->TabIndex = 8;
+				this->button24->Text = L"Eliminar";
+				this->button24->UseVisualStyleBackColor = true;
+				this->button24->Click += gcnew System::EventHandler(this, &MenuPrincipal::button24_Click);
+				// 
+				// tBPasProdEl
+				// 
+				this->tBPasProdEl->Location = System::Drawing::Point(315, 200);
+				this->tBPasProdEl->Name = L"tBPasProdEl";
+				this->tBPasProdEl->Size = System::Drawing::Size(100, 20);
+				this->tBPasProdEl->TabIndex = 7;
+				// 
+				// label58
+				// 
+				this->label58->AutoSize = true;
+				this->label58->Location = System::Drawing::Point(300, 169);
+				this->label58->Name = L"label58";
+				this->label58->Size = System::Drawing::Size(134, 13);
+				this->label58->TabIndex = 6;
+				this->label58->Text = L"Inserte el codigo del pasillo";
 				// 
 				// tabPage8
 				// 
@@ -1644,6 +2188,9 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				// 
 				// tabPage10
 				// 
+				this->tabPage10->Controls->Add(this->button25);
+				this->tabPage10->Controls->Add(this->tBElAdmin);
+				this->tabPage10->Controls->Add(this->label60);
 				this->tabPage10->Location = System::Drawing::Point(4, 22);
 				this->tabPage10->Name = L"tabPage10";
 				this->tabPage10->Size = System::Drawing::Size(1016, 466);
@@ -1651,17 +2198,75 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage10->Text = L"Eliminar Administrador";
 				this->tabPage10->UseVisualStyleBackColor = true;
 				// 
-				// tabPage11
+				// button25
 				// 
-				this->tabPage11->Location = System::Drawing::Point(4, 22);
-				this->tabPage11->Name = L"tabPage11";
-				this->tabPage11->Size = System::Drawing::Size(1016, 466);
-				this->tabPage11->TabIndex = 5;
-				this->tabPage11->Text = L"Eliminar Vendedor";
-				this->tabPage11->UseVisualStyleBackColor = true;
+				this->button25->Location = System::Drawing::Point(472, 261);
+				this->button25->Name = L"button25";
+				this->button25->Size = System::Drawing::Size(75, 23);
+				this->button25->TabIndex = 8;
+				this->button25->Text = L"Eliminar";
+				this->button25->UseVisualStyleBackColor = true;
+				this->button25->Click += gcnew System::EventHandler(this, &MenuPrincipal::button25_Click);
+				// 
+				// tBElAdmin
+				// 
+				this->tBElAdmin->Location = System::Drawing::Point(456, 214);
+				this->tBElAdmin->Name = L"tBElAdmin";
+				this->tBElAdmin->Size = System::Drawing::Size(100, 20);
+				this->tBElAdmin->TabIndex = 7;
+				// 
+				// label60
+				// 
+				this->label60->AutoSize = true;
+				this->label60->Location = System::Drawing::Point(468, 179);
+				this->label60->Name = L"label60";
+				this->label60->Size = System::Drawing::Size(88, 13);
+				this->label60->TabIndex = 6;
+				this->label60->Text = L"Inserte el codigo ";
+				// 
+				// tBElimV
+				// 
+				this->tBElimV->Controls->Add(this->button28);
+				this->tBElimV->Controls->Add(this->tBElV);
+				this->tBElimV->Controls->Add(this->label61);
+				this->tBElimV->Location = System::Drawing::Point(4, 22);
+				this->tBElimV->Name = L"tBElimV";
+				this->tBElimV->Size = System::Drawing::Size(1016, 466);
+				this->tBElimV->TabIndex = 5;
+				this->tBElimV->Text = L"Eliminar Vendedor";
+				this->tBElimV->UseVisualStyleBackColor = true;
+				// 
+				// button28
+				// 
+				this->button28->Location = System::Drawing::Point(474, 263);
+				this->button28->Name = L"button28";
+				this->button28->Size = System::Drawing::Size(75, 23);
+				this->button28->TabIndex = 11;
+				this->button28->Text = L"Eliminar";
+				this->button28->UseVisualStyleBackColor = true;
+				this->button28->Click += gcnew System::EventHandler(this, &MenuPrincipal::button28_Click);
+				// 
+				// tBElV
+				// 
+				this->tBElV->Location = System::Drawing::Point(458, 216);
+				this->tBElV->Name = L"tBElV";
+				this->tBElV->Size = System::Drawing::Size(100, 20);
+				this->tBElV->TabIndex = 10;
+				// 
+				// label61
+				// 
+				this->label61->AutoSize = true;
+				this->label61->Location = System::Drawing::Point(470, 181);
+				this->label61->Name = L"label61";
+				this->label61->Size = System::Drawing::Size(88, 13);
+				this->label61->TabIndex = 9;
+				this->label61->Text = L"Inserte el codigo ";
 				// 
 				// tabPage12
 				// 
+				this->tabPage12->Controls->Add(this->button29);
+				this->tabPage12->Controls->Add(this->textBox2);
+				this->tabPage12->Controls->Add(this->label62);
 				this->tabPage12->Location = System::Drawing::Point(4, 22);
 				this->tabPage12->Name = L"tabPage12";
 				this->tabPage12->Padding = System::Windows::Forms::Padding(3);
@@ -1669,6 +2274,32 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage12->TabIndex = 0;
 				this->tabPage12->Text = L"Eliminar Cliente";
 				this->tabPage12->UseVisualStyleBackColor = true;
+				// 
+				// button29
+				// 
+				this->button29->Location = System::Drawing::Point(474, 263);
+				this->button29->Name = L"button29";
+				this->button29->Size = System::Drawing::Size(75, 23);
+				this->button29->TabIndex = 11;
+				this->button29->Text = L"Eliminar";
+				this->button29->UseVisualStyleBackColor = true;
+				this->button29->Click += gcnew System::EventHandler(this, &MenuPrincipal::button29_Click);
+				// 
+				// textBox2
+				// 
+				this->textBox2->Location = System::Drawing::Point(458, 216);
+				this->textBox2->Name = L"textBox2";
+				this->textBox2->Size = System::Drawing::Size(100, 20);
+				this->textBox2->TabIndex = 10;
+				// 
+				// label62
+				// 
+				this->label62->AutoSize = true;
+				this->label62->Location = System::Drawing::Point(470, 181);
+				this->label62->Name = L"label62";
+				this->label62->Size = System::Drawing::Size(88, 13);
+				this->label62->TabIndex = 9;
+				this->label62->Text = L"Inserte el codigo ";
 				// 
 				// tPModProd
 				// 
@@ -1695,6 +2326,15 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabControl6->SelectedIndex = 0;
 				this->tabControl6->Size = System::Drawing::Size(1024, 492);
 				this->tabControl6->TabIndex = 2;
+				// 
+				// tabPage21
+				// 
+				this->tabPage21->Location = System::Drawing::Point(4, 22);
+				this->tabPage21->Name = L"tabPage21";
+				this->tabPage21->Size = System::Drawing::Size(1016, 466);
+				this->tabPage21->TabIndex = 6;
+				this->tabPage21->Text = L"Pasillos";
+				this->tabPage21->UseVisualStyleBackColor = true;
 				// 
 				// tabPage13
 				// 
@@ -2582,8 +3222,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPComprar->Controls->Add(this->btnOp1);
 				this->tPComprar->Controls->Add(this->label24);
 				this->tPComprar->Controls->Add(this->tPCantProd);
-				this->tPComprar->Controls->Add(this->button25);
-				this->tPComprar->Controls->Add(this->button24);
 				this->tPComprar->Controls->Add(this->button11);
 				this->tPComprar->Controls->Add(this->label21);
 				this->tPComprar->Controls->Add(this->button13);
@@ -2657,26 +3295,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPCantProd->Name = L"tPCantProd";
 				this->tPCantProd->Size = System::Drawing::Size(102, 20);
 				this->tPCantProd->TabIndex = 36;
-				// 
-				// button25
-				// 
-				this->button25->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button25->Location = System::Drawing::Point(555, 109);
-				this->button25->Name = L"button25";
-				this->button25->Size = System::Drawing::Size(102, 25);
-				this->button25->TabIndex = 35;
-				this->button25->Text = L"Mostrar Marcas";
-				this->button25->UseVisualStyleBackColor = true;
-				// 
-				// button24
-				// 
-				this->button24->Cursor = System::Windows::Forms::Cursors::Hand;
-				this->button24->Location = System::Drawing::Point(338, 109);
-				this->button24->Name = L"button24";
-				this->button24->Size = System::Drawing::Size(102, 25);
-				this->button24->TabIndex = 34;
-				this->button24->Text = L"Mostrar Productos";
-				this->button24->UseVisualStyleBackColor = true;
 				// 
 				// button11
 				// 
@@ -2808,53 +3426,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->BtnInicial->UseWaitCursor = true;
 				this->BtnInicial->Click += gcnew System::EventHandler(this, &MenuPrincipal::BtnInicial_Click);
 				// 
-				// tabPage20
-				// 
-				this->tabPage20->Controls->Add(this->button10);
-				this->tabPage20->Controls->Add(this->tBPasEl);
-				this->tabPage20->Controls->Add(this->label41);
-				this->tabPage20->Location = System::Drawing::Point(4, 22);
-				this->tabPage20->Name = L"tabPage20";
-				this->tabPage20->Size = System::Drawing::Size(1016, 466);
-				this->tabPage20->TabIndex = 6;
-				this->tabPage20->Text = L"Pasillos";
-				this->tabPage20->UseVisualStyleBackColor = true;
-				// 
-				// tabPage21
-				// 
-				this->tabPage21->Location = System::Drawing::Point(4, 22);
-				this->tabPage21->Name = L"tabPage21";
-				this->tabPage21->Size = System::Drawing::Size(1016, 466);
-				this->tabPage21->TabIndex = 6;
-				this->tabPage21->Text = L"Pasillos";
-				this->tabPage21->UseVisualStyleBackColor = true;
-				// 
-				// button10
-				// 
-				this->button10->Location = System::Drawing::Point(393, 260);
-				this->button10->Name = L"button10";
-				this->button10->Size = System::Drawing::Size(75, 23);
-				this->button10->TabIndex = 5;
-				this->button10->Text = L"Eliminar";
-				this->button10->UseVisualStyleBackColor = true;
-				this->button10->Click += gcnew System::EventHandler(this, &MenuPrincipal::button10_Click);
-				// 
-				// tBPasEl
-				// 
-				this->tBPasEl->Location = System::Drawing::Point(377, 213);
-				this->tBPasEl->Name = L"tBPasEl";
-				this->tBPasEl->Size = System::Drawing::Size(100, 20);
-				this->tBPasEl->TabIndex = 4;
-				// 
-				// label41
-				// 
-				this->label41->AutoSize = true;
-				this->label41->Location = System::Drawing::Point(362, 182);
-				this->label41->Name = L"label41";
-				this->label41->Size = System::Drawing::Size(134, 13);
-				this->label41->TabIndex = 3;
-				this->label41->Text = L"Inserte el codigo del pasillo";
-				// 
 				// MenuPrincipal
 				// 
 				this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -2892,8 +3463,26 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tabPage2->PerformLayout();
 				this->tabPage3->ResumeLayout(false);
 				this->tabPage3->PerformLayout();
+				this->tabPage4->ResumeLayout(false);
+				this->tabPage4->PerformLayout();
+				this->tabPage5->ResumeLayout(false);
+				this->tabPage5->PerformLayout();
+				this->tabPage6->ResumeLayout(false);
+				this->tabPage6->PerformLayout();
+				this->tabPage1->ResumeLayout(false);
+				this->tabPage1->PerformLayout();
 				this->tPEliminar->ResumeLayout(false);
-				this->tabControl5->ResumeLayout(false);
+				this->tBElCl->ResumeLayout(false);
+				this->tabPage20->ResumeLayout(false);
+				this->tabPage20->PerformLayout();
+				this->tabPage7->ResumeLayout(false);
+				this->tabPage7->PerformLayout();
+				this->tabPage10->ResumeLayout(false);
+				this->tabPage10->PerformLayout();
+				this->tBElimV->ResumeLayout(false);
+				this->tBElimV->PerformLayout();
+				this->tabPage12->ResumeLayout(false);
+				this->tabPage12->PerformLayout();
 				this->tPModProd->ResumeLayout(false);
 				this->tabControl6->ResumeLayout(false);
 				this->tPConsPrecio->ResumeLayout(false);
@@ -2925,8 +3514,6 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 				this->tPConsProd->PerformLayout();
 				this->tPComprar->ResumeLayout(false);
 				this->tPComprar->PerformLayout();
-				this->tabPage20->ResumeLayout(false);
-				this->tabPage20->PerformLayout();
 				this->ResumeLayout(false);
 				this->PerformLayout();
 
@@ -3002,7 +3589,7 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 		this->button24->Visible = false;
 		this->label12->Visible = false;
 		this->tBProdComp->Visible = false;
-		this->button25->Visible = false;
+		//this->button25->Visible = false;
 		this->label11->Visible = false;
 		this->tBMarcaComp->Visible = false;
 		this->label24->Visible = false;
@@ -3031,7 +3618,7 @@ private: System::Windows::Forms::TextBox^ tBPasConsProdCl;
 			this->button24->Visible = true;
 			this->label12->Visible = true;
 			this->tBProdComp->Visible = true;
-			this->button25->Visible = true;
+			//this->button25->Visible = true;
 			this->label11->Visible = true;
 			this->tBMarcaComp->Visible = true;
 			this->label24->Visible = true;
@@ -3464,7 +4051,6 @@ private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e
 	int Precio = stoi(this->toStandardString(this->tBInsMarcaPrec->Text));
 
 	A1.InsertarMarcas(A1.raiz, pCodPasilloN, pCodProductoN, pCodMarcaN, nomMarca, CantGond, Precio);
-	A2.InsertarMarcas(A2.raiz, pCodPasilloN, pCodProductoN, pCodMarcaN, nomMarca, CantGond, Precio);
 
 	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
 }
@@ -3472,6 +4058,86 @@ private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ 
 	
 	int pCodPasilloN = stoi(this->toStandardString(this->tBPasEl->Text));
 	A1.BorrarPasillo(A1.raiz, A1.raiz, pCodPasilloN);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+}
+private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button12_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	int pCodPasilloN = stoi(this->toStandardString(this->tBInsPasInv->Text));
+	string nomMarca = this->toStandardString(this->tBInsInvNom->Text);
+	int pCodProductoN = stoi(this->toStandardString(this->tBInsProdInv->Text));
+	int pCodMarcaN = stoi(this->toStandardString(this->tBInsInv->Text));
+	int Stock = stoi(this->toStandardString(this->tBInsInvStock->Text));
+	int CB = stoi(this->toStandardString(this->tBInsInvCB->Text));
+
+	A2.InsertarInventarios( A2.raiz, pCodPasilloN, pCodProductoN, pCodMarcaN, nomMarca, Stock, CB);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+
+}
+private: System::Void textBox1_TextChanged_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void tBInsAdmin_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button22_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	int admin = stoi(this->toStandardString(this->tBInsAdmin->Text));
+	string nom = this->toStandardString(this->tBInsAdminNom->Text);
+	int tel= stoi(this->toStandardString(this->tBInsAdminTel->Text));
+	string correo= this->toStandardString(this->tBInsAdminCo->Text);
+
+
+	AAdmin.InsertaNodo(admin, nom, tel, correo);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+}
+private: System::Void button26_Click(System::Object^ sender, System::EventArgs^ e) {
+	int admin = stoi(this->toStandardString(this->tBInsV->Text));
+	string nom = this->toStandardString(this->tBInsVNom->Text);
+
+
+	Vendedor.InsertaNodo(admin, nom, 0, "");
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+}
+private: System::Void tabPage1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button27_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	int admin = stoi(this->toStandardString(this->tBInsCl->Text));
+	string nom = this->toStandardString(this->tBInsClNom->Text);
+	int tel = stoi(this->toStandardString(this->tBInsClTel->Text));
+	string correo = this->toStandardString(this->tBInsClCo->Text);
+
+
+	AC.InsertaNodo(admin, nom, tel, correo);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+}
+private: System::Void button24_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	int pasN = stoi(this->toStandardString(this->tBPasProdEl->Text));
+	int prodN = stoi(this->toStandardString(this->tBProdEl->Text));
+
+	//A1.Borrar;
+	//A2.Borrar;
+
+
+}
+private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	int admn = stoi(this->toStandardString(this->tBElAdmin->Text));
+	AAdmin.BorrarPersona(AAdmin.raiz, AAdmin.raiz,admn);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+}
+private: System::Void button28_Click(System::Object^ sender, System::EventArgs^ e) {
+	int admn = stoi(this->toStandardString(this->tBElV->Text));
+	Vendedor.BorrarPersona(Vendedor.raiz, Vendedor.raiz, admn);
+	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
+
+}
+private: System::Void button29_Click(System::Object^ sender, System::EventArgs^ e) {
+	int admn = stoi(this->toStandardString(this->textBox2->Text));
+	AC.BorrarPersona(AC.raiz, AC.raiz, admn);
 	MessageBox::Show(msclr::interop::marshal_as<String^>("Acción realizada"));
 }
 };

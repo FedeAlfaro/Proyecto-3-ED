@@ -46,6 +46,8 @@ public:
 	void Borrar(NodoBinario *raiz, NodoBinario *raizArbol, int pCodPasillo);
 	NodoBinario * EncontrarMayorDeLosMenores(NodoBinario * raiz);
 	NodoBinario * BuscarNodo(NodoBinario *raizArbol, int pCodPasillo);
+	void BuscarPasilloBorrar(NodoBinario* raiz, NodoBinario* raizArbol, int pCodPasillo, int pCodProducto);
+
     /*
     void PostordenI();
 	void Equilibrar1(NodoBinario* n, bool Hh);
@@ -64,6 +66,22 @@ public:
 };
 
 //funciones
+void Binario::BuscarPasilloBorrar(NodoBinario* raiz, NodoBinario* raizArbol, int pCodPasillo, int pCodProducto) {
+	if (raiz == NULL) {
+		cout << "Pasillo no encontrado!" << endl;
+		return;
+	}
+	if (raiz->CodPasillo < pCodPasillo) {
+		BuscarPasilloBorrar(raiz->Hizq, raizArbol, pCodPasillo, pCodProducto);
+	}
+	else if (raiz->CodPasillo > pCodPasillo) {
+		BuscarPasilloBorrar(raiz->Hder, raizArbol, pCodPasillo, pCodProducto);
+	}
+	else if (raiz->CodPasillo == pCodPasillo) {
+		bool Hh = false;
+		raiz->avl.BorrarBalanceado(raiz->avl.raiz, Hh, pCodPasillo);
+	}
+}
 
 string Binario::BuscarProducto1(pNodoBinario raiz, int pCodPasillo) {
 	if (raiz != NULL) {

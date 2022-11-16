@@ -86,6 +86,11 @@ public:
     bool BuscarCedula(pNodoCliente raiz, int pCedula);
     string devolverNombre(int pCedula);
 
+	void BorrarPersona(pNodoCliente raiz, pNodoCliente  raizArbol, int pCedula);
+	void Borrar(pNodoCliente raicita, pNodoCliente raizArbol, int pCodPasillo);
+	pNodoCliente EncontrarMayorDeLosMenores(pNodoCliente raiz);
+	pNodoCliente BuscarNodo(pNodoCliente raizArbol, int pCedula);
+
     /*
     void PostordenI();
     void Equilibrar1(NodoCliente* n, bool Hh);
@@ -103,6 +108,159 @@ public:
 
 };
 
+
+void ArbolC::BorrarPersona(pNodoCliente raiz, pNodoCliente  raizArbol, int pCedula) {
+	if (raiz == NULL) {
+		cout << "Pasillo no encontrado!" << endl;
+		return;
+	}
+	if (raiz->Cedula < pCedula) {
+		BorrarPersona(raiz->Hizq, raizArbol, pCedula);
+	}
+	else if (raiz->Cedula > pCedula) {
+		BorrarPersona(raiz->Hder, raizArbol, pCedula);
+	}
+	else if (raiz->Cedula == pCedula) {
+		Borrar(raiz, raizArbol, pCedula);
+	}
+}
+
+void ArbolC::Borrar(pNodoCliente raicita, pNodoCliente raizArbol, int pCodPasillo) {
+	//si el que se borra es una hoja
+	if (raicita->Hder == NULL && raicita->Hizq == NULL) {
+		pNodoCliente aux = BuscarNodo(raizArbol, pCodPasillo);
+		if (aux->Hder == raicita) {
+			aux->Hder = raicita->Hder;
+			delete raicita;
+		}
+		else if (aux->Hizq == raicita) {
+			aux->Hizq = raicita->Hder;
+			delete raicita;
+		}
+		//si el que se borra tiene un hijo
+	}
+	else if (raicita->Hizq != NULL && raicita->Hder == NULL) {
+		pNodoCliente aux = BuscarNodo(raizArbol, pCodPasillo);
+		if (aux->Hder == raicita) {
+			aux->Hder = raicita->Hizq;
+			delete raicita;
+		}
+		else if (aux->Hizq == raicita) {
+			aux->Hizq = raicita->Hizq;
+			delete raicita;
+		}
+		else if (aux == raicita) {
+			if (aux->Hder != NULL) {
+				raiz = raicita->Hder;
+				delete aux;
+			}
+			else if (aux->Hizq != NULL) {
+				raiz = raicita->Hizq;
+				delete aux;
+			}
+		}
+	}
+	else if (raicita->Hizq == NULL && raicita->Hder != NULL) {
+		pNodoCliente aux = BuscarNodo(raizArbol, pCodPasillo);
+		if (aux->Hder == raicita) {
+			aux->Hder = raicita->Hder;
+			raicita = NULL;
+			delete raicita;
+		}
+		else if (aux->Hizq == raicita) {
+			aux->Hizq = raicita->Hder;
+			raicita = NULL;
+			delete raicita;
+		}
+		else if (aux == raicita) {
+			if (aux->Hder != NULL) {
+				raiz = raicita->Hder;
+				aux = NULL;
+				delete aux;
+			}
+			else if (aux->Hizq != NULL) {
+				raiz = raicita->Hizq;
+				aux = NULL;
+				delete aux;
+			}
+		}
+		//si el que se borra tiene 2 hijos		
+	}
+	else {
+		pNodoCliente aux = BuscarNodo(raizArbol, pCodPasillo); //Nodo antecesor al que se borra
+		pNodoCliente raizAux = EncontrarMayorDeLosMenores(raiz->Hizq);
+		if (aux->Hizq == raicita) {
+			raizAux->Hder = raicita->Hder;
+			raicita->Hder = raizAux;
+			pNodoCliente auxiliarcito = BuscarNodo(raizArbol, raizAux->Cedula);
+			if (auxiliarcito != raicita) {
+				if (auxiliarcito->Hder == raizAux) {
+					auxiliarcito->Hder = raizAux->Hizq;
+				}
+				else if (auxiliarcito->Hizq == raizAux) {
+					auxiliarcito->Hizq = raicita->Hizq;
+				}
+			}
+			aux->Hizq = raizAux;
+			raicita = NULL;
+			delete raicita;
+		}
+		else if (aux->Hder == raicita) {
+			raizAux->Hder = raicita->Hder;
+			raicita->Hder = raizAux;
+			pNodoCliente auxiliarcito = BuscarNodo(raizArbol, raizAux->Cedula);
+			if (auxiliarcito != raicita) {
+				if (auxiliarcito->Hder == raizAux) {
+					auxiliarcito->Hder = raizAux->Hizq;
+				}
+				else if (auxiliarcito->Hizq == raizAux) {
+					auxiliarcito->Hizq = raicita->Hizq;
+				}
+			}
+			aux->Hder = raizAux;
+			raicita = NULL;
+			delete raicita;
+		}
+	}
+}
+
+pNodoCliente ArbolC::EncontrarMayorDeLosMenores(pNodoCliente raiz) {
+	while (raiz->Hder->Hder != NULL) {
+		raiz = raiz->Hder;
+	}
+	if (raiz->Hder->Hder == NULL) {
+		if (raiz->Hder != NULL) {
+			pNodoCliente  aux = raiz->Hder;
+			raiz->Hder = raiz->Hder->Hder;
+			raiz = aux;
+		}
+	}
+	return raiz;
+}
+
+pNodoCliente ArbolC::BuscarNodo(pNodoCliente raizArbol, int pCedula) {
+	if (raizArbol->Cedula < pCedula) {
+		if (raizArbol->Hizq->Cedula == pCedula) {
+			return raizArbol;
+		}
+		else {
+			BuscarNodo(raizArbol->Hizq, pCedula);
+		}
+	}
+	else if (raizArbol->Cedula > pCedula) {
+		if (raizArbol->Hder->Cedula == pCedula) {
+			return raizArbol;
+		}
+		else {
+			BuscarNodo(raizArbol->Hder, pCedula);
+		}
+	}
+	else {
+		if (raizArbol->Cedula == pCedula) {
+			return raizArbol;
+		}
+	}
+}
 
 
 void ArbolC::PostordenR(NodoCliente* R) { //se cambió el izq y der del cod original
