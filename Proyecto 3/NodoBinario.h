@@ -51,7 +51,7 @@ public:
 	void RotacionSimpleDerecha(NodoAVL* &n, NodoAVL* &n1);
 	void RotacionSimpleIzquierda(NodoAVL* &n, NodoAVL* &n1);
 	bool Vacio(NodoAVL *r) { return r==NULL; };
-	void InordenRAVL(NodoAVL *R);
+	string InordenRAVL(NodoAVL *R,string resultado);
 	void InordenRAA(pNodoAVL raiz, int pCodProducto);
 	void InsertarMarcas(pNodoAVL raiz, int pCodPasillo, int pCodProducto, int pCodMarca, string pNombre, int pCantidadGondola, int precio);
 	void InsertarInventarios(pNodoAVL raiz, int pCodPasillo, int pCodProducto, int pCodMarca, string pNombre, int pCantidadStock, int CodCanasta);
@@ -217,22 +217,24 @@ void ArbolAVL::Borrar(NodoAVL* &D, bool &Hh, int x)
 	}
 }
 
-void ArbolAVL::InordenRAVL(NodoAVL *R){ //se cambió el izq y der del cod original
+string ArbolAVL::InordenRAVL(NodoAVL *R,string resultado){ //se cambió el izq y der del cod original
     if(R==NULL){
-        return;
+        return resultado;
     }else{
     	try{
-			InordenRAVL(R->Hizq);
+			return InordenRAVL(R->Hizq,resultado);
 		}catch(...){
 			cout<<"Error en inordenR der"<<endl;
 		}
 		try{
-			cout<<endl<<"Numero de producto: "<<R->CodProducto<<"   Nombre de producto: "<<R->Nombre<< "";
+			int CodProducto = R->CodProducto;
+			resultado += "\n Numero de producto: " + to_string(CodProducto) + "   Nombre de producto: " + R->Nombre + "";
+			return InordenRAVL(R->Hder, resultado);
 		}catch(...){
 			cout<<"Error en inordenR raiz"<<endl;
 		}
 		try{
-			InordenRAVL(R->Hder);
+			return InordenRAVL(R->Hder, resultado);
 		}catch(...){
 			cout<<"Error en inordenR izq"<<endl;
 		}

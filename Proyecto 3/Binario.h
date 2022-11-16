@@ -40,7 +40,7 @@ public:
     string devolverNombrePas(pNodoBinario raiz, int pCodPasillo, string resultado);
     int BuscarStock(pNodoBinario raiz, int pCodPasillo, int pCodProducto, int pCodMarca);
     void ModificarStock(pNodoBinario raiz, int pCodPasillo, int pCodProducto, int pCodMarca, int CantidadStock);
-    
+	string BuscarProducto1(pNodoBinario raiz, int pCodPasillo);
 	
 	void BorrarPasillo(NodoBinario *raiz, NodoBinario * raizArbol, int pCodPasillo);
 	void Borrar(NodoBinario *raiz, NodoBinario *raizArbol, int pCodPasillo);
@@ -64,6 +64,22 @@ public:
 };
 
 //funciones
+
+string Binario::BuscarProducto1(pNodoBinario raiz, int pCodPasillo) {
+	if (raiz != NULL) {
+		if (pCodPasillo < raiz->CodPasillo) {
+			raiz = raiz->Hder;
+			return BuscarProducto1(raiz, pCodPasillo);
+		}
+		else if (pCodPasillo > raiz->CodPasillo) {
+			raiz = raiz->Hizq;
+			return BuscarProducto1(raiz, pCodPasillo);
+		}
+		else {
+			return raiz->avl.InordenRAVL(raiz->avl.raiz,"");
+		}
+	}
+}
 
 void Binario::BorrarPasillo(NodoBinario *raiz, NodoBinario * raizArbol, int pCodPasillo){
 	if(raiz == NULL){
@@ -407,17 +423,18 @@ bool Binario::BuscarPasillo(pNodoBinario raiz, int pCodPasillo){
 	if(raiz != NULL){
 		if(pCodPasillo < raiz->CodPasillo){
 			raiz=raiz->Hder;
-			BuscarPasillo(raiz, pCodPasillo);
+			return BuscarPasillo(raiz, pCodPasillo);
 		}
 		else if(pCodPasillo > raiz->CodPasillo){
 			raiz=raiz->Hizq;
-			BuscarPasillo(raiz, pCodPasillo);
+			return BuscarPasillo(raiz, pCodPasillo);
 		}
 		else{
 			encontrado = true;
 			return encontrado;
 		}
 	}
+	return encontrado;
 }
 
 bool Binario::BuscarProducto(pNodoBinario raiz, int pCodPasillo, int direccion) {
@@ -434,31 +451,31 @@ bool Binario::BuscarProducto(pNodoBinario raiz, int pCodPasillo, int direccion) 
 		else {
 			switch (direccion) {
 			case 1:
-				raiz->avl.InordenRAVL(raiz->avl.raiz);
+				raiz->avl.InordenRAVL(raiz->avl.raiz,"");
 				break;
 			case 2:
-				raiz->avl.InordenRAVL(raiz->avl.raiz);
+				raiz->avl.InordenRAVL(raiz->avl.raiz,"");
 				cout << endl << endl;
 				cout << "Por favor ingrese el codigo del producto que desea visualizar: ";
 				cin >> pCodProductito;
 				raiz->avl.BuscarMarca(raiz->avl.raiz, pCodProductito, 1);
 				break;
 			case 3:
-				raiz->avl.InordenRAVL(raiz->avl.raiz);
+				raiz->avl.InordenRAVL(raiz->avl.raiz,"");
 				cout << endl << endl;
 				cout << "Por favor ingrese el codigo del producto que desea visualizar: ";
 				cin >> pCodProductito;
 				raiz->avl.BuscarMarca(raiz->avl.raiz, pCodProductito, 2);
 				break;
 			case 4:
-				raiz->avl.InordenRAVL(raiz->avl.raiz);
+				raiz->avl.InordenRAVL(raiz->avl.raiz,"");
 				cout << endl << endl;
 				cout << "Por favor ingrese el codigo del producto que desea visualizar: ";
 				cin >> pCodProductito;
 				raiz->avl.BuscarMarca(raiz->avl.raiz, pCodProductito, 3);
 				break;
 			case 5:
-				raiz->avl.InordenRAVL(raiz->avl.raiz);
+				raiz->avl.InordenRAVL(raiz->avl.raiz,"");
 				cout << endl << endl;
 				cout << "Por favor ingrese el codigo del producto que desea agregar: ";
 				cin >> pCodProductito;
@@ -520,7 +537,7 @@ bool Binario::BuscarPasillo2(pNodoBinario p, int pCodPasillo){
 			if(p->avl.Vacio(p->avl.raiz)){
 				cout<<"No hay productos en este pasillo "<<endl;
 			}else{
-				p->avl.InordenRAVL(p->avl.raiz);
+				p->avl.InordenRAVL(p->avl.raiz,"");
 				encontrado = true;
 			}	
 			return encontrado;
